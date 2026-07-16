@@ -1,0 +1,57 @@
+name: Daily Newsletter Snapshot
+
+# Renders the ?mini=tickets card as a static PNG and commits it to
+# docs/snapshots/. The PNG is embeddable in email newsletters (where
+# iframes are stripped by Gmail/Outlook/Apple Mail/etc).
+#
+# Runs once a day in the early morning CT so the PNG is fresh by the
+# time the newsletter goes out. Also manually triggerable from the
+# Actions tab.
+
+on:
+  schedule:
+    # 11:00 UTC = 6:00 AM CDT (summer) / 5:00 AM CST (winter)
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper deps
+        run: pip install -r scraper/requirements.txt
+
+      - name: Refresh data so the snapshot reflects today's state
+        run: python scraper/fetch_na3hl.py
+
+      - name: Install Playwright + Chromium
+        run: |
+          pip install -r scripts/requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Render snapshot PNG
+        run: python scripts/snapshot_cards.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data docs/snapshots
+          if ! git diff --cached --quiet; then
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+            git commit -m "🖼️ Daily snapshot — ${TIMESTAMP}"
+            git push
+          else
+            echo "No snapshot changes detected."
+          fi

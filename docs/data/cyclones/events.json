@@ -1,0 +1,6 @@
+{
+  "_note": "Editorial — hand-curated. The Cyclones publish their promotional schedule in mid-September each year (announced via wausaucyclones.com and a WPR story). Each event: {date: 'YYYY-MM-DD', month: 'Sep', day: '25', title: '...', desc: '...', tags: ['promo'|'theme'|'community'|'family'|'giveaway'|...]}. Refresh when the 2026-27 promo schedule drops — see CLAUDE.md.",
+  "events": [
+    { "date": "2026-09-25", "month": "Sep", "day": "25", "title": "Opening Night vs Fox Cities Forge", "desc": "The Cyclones open the 2026-27 home schedule at Marathon Park against the NA3HL's newest franchise. Puck drops at 7:10 PM.", "tags": ["promo"] }
+  ]
+}
