@@ -308,8 +308,7 @@ body {
   transition: background 0.15s;
 }
 
-.game-card.clickable { cursor: pointer; }
-.game-card.clickable:hover { background: var(--field-blue); }
+.game-card:hover { background: var(--field-blue); }
 
 .game-date {
   text-align: center;
@@ -523,9 +522,14 @@ body {
   font-size: 13px;
 }
 
+.standings-table tbody tr { transition: background 0.15s; }
+.standings-table tbody tr:hover { background: var(--neutral-100); }
+
 .standings-table tr.highlight {
   background: linear-gradient(90deg, var(--field-blue) 0%, rgba(227,242,253,0) 100%);
 }
+
+.standings-table tbody tr.highlight:hover { background: var(--field-blue); }
 
 .standings-table tr.highlight td:first-child {
   border-left: 3px solid var(--chucks-navy);
