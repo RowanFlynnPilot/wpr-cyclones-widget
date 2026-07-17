@@ -306,10 +306,10 @@ body {
   border-bottom: 1px solid var(--neutral-100);
   align-items: center;
   transition: background 0.15s;
-  cursor: pointer;
 }
 
-.game-card:hover { background: var(--field-blue); }
+.game-card.clickable { cursor: pointer; }
+.game-card.clickable:hover { background: var(--field-blue); }
 
 .game-date {
   text-align: center;
@@ -1166,7 +1166,10 @@ img.opp-logo:not([src]), img.standings-logo:not([src]) { display: none; }
   inset: 0;
   z-index: 1000;
   display: flex;
-  align-items: center;
+  /* flex-start + a JS-set margin-top anchors the dialog near the clicked
+     card — centering would put it at half the iframe's full content height,
+     which can be far outside the reader's actual viewport when embedded. */
+  align-items: flex-start;
   justify-content: center;
 }
 .game-modal[hidden] { display: none; }
@@ -1853,6 +1856,7 @@ body.is-mini-tickets .widget-container {
   background: var(--neutral-300);
 }
 </style>
+</head>
 
 <body>
 
@@ -2098,6 +2102,14 @@ function currentMonthKey() {
   return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
 }
 
+// Game dates in schedule.json are local (CT) dates, so "today" must be the
+// viewer's local date too — toISOString() is UTC, which rolls to tomorrow
+// at 6/7 PM CT, right when evening games start.
+function localIsoDate() {
+  const n = new Date();
+  return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`;
+}
+
 function defaultMonthIdx() {
   const key = currentMonthKey();
   if (key < SEASON_MONTH_KEYS[0]) return 0;
@@ -2112,7 +2124,7 @@ function bestMonthIdxForSchedule() {
   if (!scheduleData || !Array.isArray(scheduleData.games) || scheduleData.games.length === 0) {
     return defaultMonthIdx();
   }
-  const todayIso = new Date().toISOString().slice(0, 10);
+  const todayIso = localIsoDate();
   const future = scheduleData.games.filter(g => g.date && g.date >= todayIso);
   const target = future.length > 0 ? future[0] : scheduleData.games[scheduleData.games.length - 1];
   const i = SEASON_MONTH_KEYS.indexOf(target.date.slice(0, 7));
@@ -2122,7 +2134,12 @@ function bestMonthIdxForSchedule() {
 // Hockey score label with the OT/SO tag: "4-3 (OT)".
 function otTag(g) {
   if (!g.overtime) return '';
-  const extraPeriods = Object.keys((g.us && g.us.periods) || {}).filter(p => !['1','2','3'].includes(p));
+  // The extra-period key may exist on only the scoring team's side (a
+  // shootout loss has "so" only under g.them) — check both sides.
+  const extraPeriods = [
+    ...Object.keys((g.us && g.us.periods) || {}),
+    ...Object.keys((g.them && g.them.periods) || {}),
+  ].filter(p => !['1','2','3'].includes(p));
   const isShootout = extraPeriods.some(p => p.toLowerCase().includes('so'));
   return isShootout ? ' (SO)' : ' (OT)';
 }
@@ -2233,7 +2250,7 @@ function renderSchedule() {
     return;
   }
 
-  const todayIso = new Date().toISOString().slice(0, 10);
+  const todayIso = localIsoDate();
   list.innerHTML = filtered.map(g => {
     const d = parseDate(g.date);
     const dayNum = d.getDate();
@@ -2253,13 +2270,17 @@ function renderSchedule() {
           <div class="game-outcome ${won ? 'w' : 'l'}">${won ? 'W' : 'L'}</div>
         </div>`;
     } else if (live) {
-      resultHTML = `<div class="game-result"><div class="game-time" style="color:#c62828;font-weight:700">LIVE</div></div>`;
-    } else {
+      const liveScore = (typeof g.our_score === 'number' && typeof g.opponent_score === 'number')
+        ? ` ${g.our_score}-${g.opponent_score}` : '';
+      resultHTML = `<div class="game-result"><div class="game-time" style="color:#c62828;font-weight:700">LIVE${liveScore}</div></div>`;
+    } else if ((g.status_code || 0) === 0) {
       const ticketBtn = g.home
         ? `<a class="ticket-btn" href="${TICKETS_URL}" target="_blank" rel="noopener" onclick="event.stopPropagation()">&#127903;&#65039; Buy Tickets</a>`
         : '';
       resultHTML = `<div class="game-result"><div class="game-time">${escapeHtml(formatTimeLabel(g.time))}</div>${ticketBtn}</div>`;
     }
+    // Postponed / cancelled / score-less finals get no time or ticket CTA in
+    // the result column — the status tag in the meta line says what happened.
 
     const venue = g.home ? HOME_VENUE : (g.location ? escapeHtml(g.location) : 'Away');
     const clickable = final && g.id;
@@ -2462,7 +2483,10 @@ function renderEvents() {
     list.innerHTML = `<div class="empty-state" style="padding:40px 20px"><div class="empty-icon">&#127954;</div><p>No special events posted yet.<br>Check back as the season approaches.</p></div>`;
     return;
   }
-  const sorted = [...EVENTS].sort((a, b) => a.date.localeCompare(b.date));
+  // events.json is hand-edited — tolerate a missing date/tags/desc on one
+  // entry rather than letting a TypeError blank the whole tab.
+  const sorted = EVENTS.filter(e => e && e.title)
+    .sort((a, b) => (a.date || '').localeCompare(b.date || ''));
   list.innerHTML = sorted.map(e => `
     <div class="event-card">
       <div class="event-date-badge">
@@ -2473,7 +2497,7 @@ function renderEvents() {
         <div class="event-title">${escapeHtml(e.title)}</div>
         <div class="event-desc">${escapeHtml(e.desc)}</div>
         <div class="event-tags">
-          ${e.tags.map(t => `<span class="event-tag ${escapeHtml(t)}">${escapeHtml(t)}</span>`).join('')}
+          ${(e.tags || []).map(t => `<span class="event-tag ${escapeHtml(t)}">${escapeHtml(t)}</span>`).join('')}
         </div>
       </div>
     </div>
@@ -2607,7 +2631,7 @@ function buildGoalsCallout(g) {
 
 let lastFocusedBeforeModal = null;
 
-function openGameDetail(gameId) {
+function openGameDetail(gameId, sourceEl) {
   const g = findGameById(gameId);
   if (!g) return;
   const modal = document.getElementById('gameModal');
@@ -2617,6 +2641,13 @@ function openGameDetail(gameId) {
   modal.removeAttribute('hidden');
   document.body.style.overflow = 'hidden';
   body.innerHTML = renderGameDetail(g);
+  const content = modal.querySelector('.game-modal-content');
+  if (content) {
+    // Anchor near the invoking card; the card is where the reader is looking,
+    // and inside the auto-resized iframe it's the only viewport hint we have.
+    const anchorTop = sourceEl ? sourceEl.getBoundingClientRect().top - 40 : window.innerHeight * 0.1;
+    content.style.marginTop = `${Math.max(16, Math.min(anchorTop, window.innerHeight - 320))}px`;
+  }
   const closeBtn = modal.querySelector('.game-modal-close');
   if (closeBtn) closeBtn.focus();
 }
@@ -2913,7 +2944,7 @@ function handleGameCardActivate(e) {
   if (e.target.closest('a, button')) return; // don't fire on tickets / inner buttons
   if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
   if (e.type === 'keydown') e.preventDefault();
-  openGameDetail(card.dataset.gameId);
+  openGameDetail(card.dataset.gameId, card);
 }
 document.addEventListener('click', handleGameCardActivate);
 document.addEventListener('keydown', handleGameCardActivate);
@@ -3004,7 +3035,10 @@ function applyBranding() {
 // traffic out as /wpr-cyclones-widget/cyclones/ (and /mini variants).
 function trackPageview() {
   try {
-    const variant = IS_MINI ? '/mini' : '';
+    // The daily snapshot workflow renders this page in headless Chromium —
+    // don't count those as real pageviews.
+    if (navigator.webdriver) return;
+    const variant = IS_MINI_TICKETS ? '/mini-tickets' : (IS_MINI ? '/mini' : '');
     const url = `https://rowanflynnpilot.github.io/wpr-cyclones-widget/${TEAM.slug}${variant}/`;
     window.plausible('pageview', { u: url });
   } catch {}
@@ -3020,7 +3054,7 @@ function renderMini() {
   const container = document.querySelector('.widget-container');
   if (!container) return;
   const games = (scheduleData && Array.isArray(scheduleData.games)) ? scheduleData.games : [];
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localIsoDate();
 
   const finals = games.filter(g => (g.status_code || 0) === 2 && typeof g.our_score === 'number');
   const lastFinal = finals.length ? finals[finals.length - 1] : null;
@@ -3107,7 +3141,7 @@ function renderMiniTickets() {
   if (!container) return;
   document.body.classList.add('is-mini-tickets');
   const games = (scheduleData && Array.isArray(scheduleData.games)) ? scheduleData.games : [];
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localIsoDate();
   const finals = games.filter(g => (g.status_code || 0) === 2);
   const lastFinal = finals.length ? finals[finals.length - 1] : null;
   const upcoming = games.find(g => g.date && g.date >= today && (g.status_code || 0) < 2);

@@ -74,6 +74,13 @@ def fetch_json(endpoint, params):
     return payload["data"]
 
 
+def fix_name_case(s):
+    """Titlecase only when the feed shouts in ALL CAPS — .title() on an
+    already-mixed-case name mangles McGrath -> Mcgrath, DeSmith -> Desmith."""
+    s = (s or "").strip()
+    return s.title() if s.isupper() else s
+
+
 def normalize_logo(url):
     """Cloudflare Images URLs 400 without a variant segment. /unifiedschedule
     logos already end in /256, but /standings logoUrl comes back bare
@@ -105,7 +112,7 @@ def side_summary(side):
         "periods": periods,
         "scorers": [
             {
-                "name": f"{(g.get('firstName') or '').title()} {(g.get('lastName') or '').title()}".strip(),
+                "name": f"{fix_name_case(g.get('firstName'))} {fix_name_case(g.get('lastName'))}".strip(),
                 "period": g.get("period", ""),
                 "clock": g.get("clockTime", ""),
             }
@@ -264,7 +271,7 @@ def fetch_stats():
         num, pos = jersey(p)
         skaters.append(
             {
-                "name": f"{(p.get('firstName') or '').title()} {(p.get('lastName') or '').title()}".strip(),
+                "name": f"{fix_name_case(p.get('firstName'))} {fix_name_case(p.get('lastName'))}".strip(),
                 "jersey": num,
                 "pos": pos[:1].upper() if pos else "",
                 "GP": s.get("gp", 0),
@@ -286,7 +293,7 @@ def fetch_stats():
         sv = s.get("svpct")
         goalies.append(
             {
-                "name": f"{(p.get('firstName') or '').title()} {(p.get('lastName') or '').title()}".strip(),
+                "name": f"{fix_name_case(p.get('firstName'))} {fix_name_case(p.get('lastName'))}".strip(),
                 "jersey": num,
                 "GP": s.get("gp", 0),
                 "W": s.get("wins", 0),

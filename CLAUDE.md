@@ -60,6 +60,12 @@ included. `gateway.gamesheet.io` has no such challenge; use the gateway.
   are the home/away splits. The record banner uses these directly.
 - Logos are served from `imagedelivery.net` (Cloudflare Images) and hotlink
   fine. The Cyclones logo is also self-hosted at `docs/cyclones-logo.png`.
+- **Cloudflare Images URLs need a variant segment** or they 400:
+  `/unifiedschedule` logos come with `/256` appended, but `/standings`
+  `logoUrl` comes bare — the scraper's `normalize_logo()` appends `/256`.
+- Standings `rank` is unreliable before games are played: teams tie at 1 and
+  late-added teams show 0. The scraper renumbers alphabetically 1..N while
+  every team has GP=0, then trusts the feed rank in-season.
 
 ## Widget JSON contract (written by the scraper)
 - `schedule.json` — `games[]` with `id, date (ISO), day, time, home, opponent,

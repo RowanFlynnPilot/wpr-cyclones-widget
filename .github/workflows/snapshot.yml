@@ -17,6 +17,12 @@ on:
 permissions:
   contents: write
 
+# Shares the data-push group with scrape.yml so concurrent commits don't
+# race each other's push.
+concurrency:
+  group: data-push
+  cancel-in-progress: false
+
 jobs:
   snapshot:
     runs-on: ubuntu-latest
@@ -51,6 +57,7 @@ jobs:
           if ! git diff --cached --quiet; then
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
             git commit -m "🖼️ Daily snapshot — ${TIMESTAMP}"
+            git pull --rebase origin main
             git push
           else
             echo "No snapshot changes detected."
