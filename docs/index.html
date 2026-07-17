@@ -183,8 +183,8 @@ body {
 }
 
 .tab-btn:hover {
-  color: rgba(255,255,255,0.85);
-  background: rgba(255,255,255,0.05);
+  color: var(--chucks-cyan-light);
+  background: rgba(255,255,255,0.07);
 }
 
 .tab-btn.active {
@@ -1155,6 +1155,17 @@ img.opp-logo:not([src]), img.standings-logo:not([src]) { display: none; }
   text-transform: uppercase;
   margin-left: 2px;
 }
+.stats-disclaimer {
+  margin: 0 0 12px;
+  padding: 9px 12px;
+  background: rgba(245, 177, 32, 0.12);
+  border-left: 3px solid var(--chucks-cyan);
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--neutral-700);
+}
+
 .stats-table th.sortable { cursor: pointer; user-select: none; }
 .stats-table th.sortable:hover { background: var(--chucks-navy-light); }
 .stats-table th.sortable button {
@@ -2849,7 +2860,15 @@ function renderStatsTab() {
     </tr>
   `).join('');
 
+  // stats.json is flagged prior_season while the scraper is serving last
+  // season's numbers as a preseason preview — the flag (and this note)
+  // disappear automatically once current-season stats hit the feed.
+  const disclaimer = statsData.prior_season
+    ? `<div class="stats-disclaimer">Last season&rsquo;s final stats (${escapeHtml(statsData.season_name || 'prior season')}) shown as a preview &mdash; current numbers will replace these once the new season begins.</div>`
+    : '';
+
   wrap.innerHTML = `
+    ${disclaimer}
     <table class="stats-table" id="statsTable">
       <thead><tr>${headerCells}</tr></thead>
       <tbody>${rows}</tbody>

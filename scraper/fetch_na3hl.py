@@ -47,6 +47,13 @@ TEAM = {
     "team_id": 525857,        # Wausau Cyclones within season 15275
     "club_id": 63,            # stable across seasons; use to find the new team_id
     "division": "Central Division",
+    # Preseason preview: while the current season has no stat lines, the
+    # Stats tab shows last season's final numbers (flagged so the widget
+    # renders a disclaimer). This retires itself the moment 2026-27 stats
+    # appear in the feed; set prior_season_id to None to turn it off early.
+    "prior_season_id": 11166,       # 2025-26 NA3HL
+    "prior_team_id": 395582,        # Wausau Cyclones within season 11166
+    "prior_season_label": "2025-26 NA3HL",
 }
 
 OUTPUT_DIR = Path(__file__).parent.parent / "docs" / "data" / TEAM["slug"]
@@ -249,11 +256,26 @@ def fetch_standings():
 
 
 def fetch_stats():
-    """Season skater + goalie stats for Cyclones players only."""
+    """Season skater + goalie stats for Cyclones players only. Falls back to
+    last season's final numbers (flagged prior_season for the widget's
+    disclaimer) until the current season produces stat lines."""
+    stats = fetch_stats_for(TEAM["season_id"], TEAM["team_id"], TEAM["season_label"])
+    if not stats["skaters"] and not stats["goalies"] and TEAM.get("prior_season_id"):
+        print("  No current-season stats yet — falling back to last season's.")
+        prior = fetch_stats_for(
+            TEAM["prior_season_id"], TEAM["prior_team_id"], TEAM["prior_season_label"]
+        )
+        if prior["skaters"] or prior["goalies"]:
+            prior["prior_season"] = True
+            return prior
+    return stats
+
+
+def fetch_stats_for(season_id, team_id, season_label):
     base = {
-        "filter[seasons]": TEAM["season_id"],
+        "filter[seasons]": season_id,
         "filter[gametype]": "overall",
-        "filter[teams]": TEAM["team_id"],
+        "filter[teams]": team_id,
         "filter[limit]": 60,
     }
     skaters_raw = fetch_json("players", base)
@@ -261,7 +283,7 @@ def fetch_stats():
 
     def jersey(p):
         for t in p.get("teams", []):
-            if t.get("id") == TEAM["team_id"]:
+            if t.get("id") == team_id:
                 return t.get("jersey", ""), (t.get("positions") or [""])[0]
         return "", ""
 
@@ -309,7 +331,7 @@ def fetch_stats():
     goalies.sort(key=lambda x: (-x["GP"], x["GAA"]))
 
     return {
-        "season_name": TEAM["season_label"],
+        "season_name": season_label,
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "skaters": skaters,
         "goalies": goalies,

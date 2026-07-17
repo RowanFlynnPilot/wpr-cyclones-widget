@@ -144,7 +144,11 @@ full-widget iframe.
 ## Annual Rollover Checklist (each August)
 1. `GET /seasons?filter[leagues]=1148419` → find the new `XXXX-XX NA3HL` season id
 2. `GET /teams?filter[seasons]={new_id}` → find the Cyclones entry via `club_id=63`, note the new `team_id`
-3. Update `season_id`, `team_id`, `season_label` in `scraper/fetch_na3hl.py`
+3. Update `season_id`, `team_id`, `season_label` in `scraper/fetch_na3hl.py`;
+   roll `prior_season_id` / `prior_team_id` / `prior_season_label` forward too
+   if the preseason stats preview (last season's numbers + disclaimer in the
+   Stats tab) is wanted again — it retires itself once the new season has
+   stat lines, or set `prior_season_id` to `None` to disable it
 4. Update `seasonLabel` and `seasonMonths` in the `TEAMS` block of `docs/index.html`
 5. Re-curate `docs/data/cyclones/events.json` when the promo schedule drops (mid-September)
 
