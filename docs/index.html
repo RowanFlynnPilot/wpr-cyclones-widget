@@ -848,6 +848,8 @@ img.opp-logo:not([src]), img.standings-logo:not([src]) { display: none; }
   cursor: default;
 }
 
+.event-card.past { opacity: 0.55; }
+
 .event-card:hover { background: var(--field-blue); }
 
 .event-card:last-child { border-bottom: none; }
@@ -1155,6 +1157,16 @@ img.opp-logo:not([src]), img.standings-logo:not([src]) { display: none; }
 }
 .stats-table th.sortable { cursor: pointer; user-select: none; }
 .stats-table th.sortable:hover { background: var(--chucks-navy-light); }
+.stats-table th.sortable button {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
 .stats-table th.sort-active::after {
   content: " \25BC";
   font-size: 8px;
@@ -1387,7 +1399,11 @@ body.is-mini .widget-container {
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   border-radius: var(--radius-md);
   background: #fff;
+  /* Hide the full tab UI until renderMini() swaps in the mini markup —
+     is-mini flips on synchronously, mini-ready after the swap. */
+  visibility: hidden;
 }
+body.is-mini.mini-ready .widget-container { visibility: visible; }
 
 .mini {
   display: flex;
@@ -2487,8 +2503,13 @@ function renderEvents() {
   // entry rather than letting a TypeError blank the whole tab.
   const sorted = EVENTS.filter(e => e && e.title)
     .sort((a, b) => (a.date || '').localeCompare(b.date || ''));
-  list.innerHTML = sorted.map(e => `
-    <div class="event-card">
+  // Upcoming events lead; past ones sink to the bottom, dimmed, so February
+  // readers aren't greeted by September's promo nights.
+  const today = localIsoDate();
+  const isPast = e => !!e.date && e.date < today;
+  const ordered = [...sorted.filter(e => !isPast(e)), ...sorted.filter(isPast)];
+  list.innerHTML = ordered.map(e => `
+    <div class="event-card${isPast(e) ? ' past' : ''}">
       <div class="event-date-badge">
         <div class="e-month">${escapeHtml(e.month)}</div>
         <div class="e-day">${escapeHtml(e.day)}</div>
@@ -2778,9 +2799,11 @@ const STATS_COLS = {
   goalies: ['GP', 'W', 'L', 'OTL', 'GA', 'SVPCT', 'GAA', 'SO'],
 };
 const STATS_COL_LABELS = { SVPCT: 'SV%' };
+// Goalies default to GP so a 1-game backup with a 0.00 GAA doesn't outrank
+// the starter; GAA breaks ties (see the tiebreak in renderStatsTab).
 const STATS_DEFAULT_SORT = {
   skaters: { key: 'PTS', dir: 'desc' },
-  goalies: { key: 'GAA', dir: 'asc' },
+  goalies: { key: 'GP', dir: 'desc' },
 };
 
 function renderStatsTab() {
@@ -2803,10 +2826,14 @@ function renderStatsTab() {
   const def = STATS_DEFAULT_SORT[statsView];
   const sortKey = statsSortKey || def.key;
   const sortDir = statsSortKey ? statsSortDir : def.dir;
-  const sorted = [...players].sort((a, b) => compareStat(a[sortKey], b[sortKey], sortDir));
+  const sorted = [...players].sort((a, b) =>
+    compareStat(a[sortKey], b[sortKey], sortDir) ||
+    (statsView === 'goalies' ? compareStat(a.GAA, b.GAA, 'asc') : compareStat(a.PTS, b.PTS, 'desc'))
+  );
 
+  // Real <button> inside the th gives keyboard users sorting for free.
   const headerCells = ['<th class="text-left">Player</th>'].concat(
-    cols.map(c => `<th class="sortable${c === sortKey ? ' sort-active' : ''}" data-col="${escapeHtml(c)}">${STATS_COL_LABELS[c] || c}</th>`)
+    cols.map(c => `<th class="sortable${c === sortKey ? ' sort-active' : ''}" data-col="${escapeHtml(c)}"${c === sortKey ? ` aria-sort="${sortDir === 'asc' ? 'ascending' : 'descending'}"` : ''}><button type="button">${STATS_COL_LABELS[c] || c}</button></th>`)
   ).join('');
 
   const fmtVal = (c, v) => {
@@ -2955,6 +2982,25 @@ document.addEventListener('click', (e) => {
 });
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeGameModal();
+});
+
+// Focus trap: while the modal is open, Tab cycles within it instead of
+// walking out into the (visually blocked) page behind the overlay.
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Tab') return;
+  const modal = document.getElementById('gameModal');
+  if (!modal || modal.hasAttribute('hidden')) return;
+  const focusables = modal.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
+  if (!focusables.length) return;
+  const first = focusables[0];
+  const last = focusables[focusables.length - 1];
+  if (!modal.contains(document.activeElement)) {
+    e.preventDefault(); first.focus();
+  } else if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault(); last.focus();
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault(); first.focus();
+  }
 });
 
 // ═══════ IFRAME AUTO-RESIZE ═══════
@@ -3131,6 +3177,7 @@ function renderMini() {
   `;
 
   container.innerHTML = html;
+  document.body.classList.add('mini-ready');
 }
 
 // Newsletter-style mini variant — last game (score + our goal scorers) +
@@ -3169,6 +3216,7 @@ function renderMiniTickets() {
       </div>
     </div>
   `;
+  document.body.classList.add('mini-ready');
 }
 
 function renderMtLast(g) {
