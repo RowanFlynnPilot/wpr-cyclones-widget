@@ -74,6 +74,17 @@ def fetch_json(endpoint, params):
     return payload["data"]
 
 
+def normalize_logo(url):
+    """Cloudflare Images URLs 400 without a variant segment. /unifiedschedule
+    logos already end in /256, but /standings logoUrl comes back bare
+    (imagedelivery.net/<account>/<image-id>) — append the same /256 variant."""
+    if not url:
+        return ""
+    if url.startswith("https://imagedelivery.net/") and len(url.split("/")) == 5:
+        return url + "/256"
+    return url
+
+
 def parse_game_date(label):
     """'Sep 4, 2026' -> ('2026-09-04', 'Fri')."""
     dt = datetime.strptime(label, "%b %d, %Y")
@@ -88,7 +99,7 @@ def side_summary(side):
         "id": side.get("id"),
         "name": side.get("title", ""),
         "abbr": side.get("abbr", ""),
-        "logo": side.get("logo", ""),
+        "logo": normalize_logo(side.get("logo", "")),
         "goals": side.get("goals"),
         "result": side.get("result", ""),
         "periods": periods,
@@ -138,7 +149,7 @@ def fetch_schedule():
             "home": is_home,
             "opponent": them.get("title", ""),
             "opponent_abbr": them.get("abbr", ""),
-            "opponent_logo": them.get("logo", ""),
+            "opponent_logo": normalize_logo(them.get("logo", "")),
             "location": g.get("location", ""),
             "status": g.get("status", ""),
             "status_code": status_code,
@@ -185,19 +196,27 @@ def fetch_standings():
     )
     rows = data[0]["standings"]
     central = [r for r in rows if r["division"]["title"] == TEAM["division"]]
-    central.sort(key=lambda r: r["rank"])
+
+    # Feed ranks are unreliable before any games are played (teams tie at 1,
+    # late-added teams show 0) — fall back to alphabetical order and number
+    # 1..N. Once the season is underway, trust the feed rank (0 sorts last).
+    preseason = all(r["stats"]["GP"] == 0 for r in central)
+    if preseason:
+        central.sort(key=lambda r: r["team"]["title"])
+    else:
+        central.sort(key=lambda r: (r["rank"] or len(central), -r["stats"]["PTS"], r["team"]["title"]))
 
     teams = []
-    for r in central:
+    for i, r in enumerate(central):
         s = r["stats"]
         t = r["team"]
         teams.append(
             {
-                "rank": r["rank"],
+                "rank": i + 1 if preseason else r["rank"],
                 "team_id": t["id"],
                 "name": t["title"],
                 "abbr": t.get("abbreviation", ""),
-                "logo": t.get("logoUrl", ""),
+                "logo": normalize_logo(t.get("logoUrl", "")),
                 "GP": s["GP"],
                 "W": s["W"],
                 "L": s["L"],
@@ -340,7 +359,7 @@ def main():
         },
     )
 
-    print("\n✓ Done!")
+    print("\nDone!")
 
 
 if __name__ == "__main__":
