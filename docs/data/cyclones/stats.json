@@ -1,19 +1,32 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-09-05T13:46:01.776402+00:00",
+  "last_updated": "2026-09-05T19:58:09.911731+00:00",
   "skaters": [
+    {
+      "name": "Jackson Maddock",
+      "jersey": "27",
+      "pos": "F",
+      "GP": 1,
+      "G": 0,
+      "A": 2,
+      "PTS": 2,
+      "PIM": 2,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 2
+    },
     {
       "name": "Jacob Maxon",
       "jersey": "20",
       "pos": "F",
       "GP": 1,
-      "G": 2,
+      "G": 1,
       "A": 0,
-      "PTS": 2,
+      "PTS": 1,
       "PIM": 4,
       "PPG": 1,
       "GWG": 0,
-      "PTSPG": 2
+      "PTSPG": 1
     },
     {
       "name": "Brayden Myers",
@@ -22,6 +35,32 @@
       "GP": 1,
       "G": 1,
       "A": 0,
+      "PTS": 1,
+      "PIM": 0,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 1
+    },
+    {
+      "name": "Nate Spencer",
+      "jersey": "24",
+      "pos": "F",
+      "GP": 1,
+      "G": 1,
+      "A": 0,
+      "PTS": 1,
+      "PIM": 2,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 1
+    },
+    {
+      "name": "Gabe Field",
+      "jersey": "6",
+      "pos": "D",
+      "GP": 1,
+      "G": 0,
+      "A": 1,
       "PTS": 1,
       "PIM": 0,
       "PPG": 0,
@@ -81,19 +120,6 @@
       "PTSPG": 0
     },
     {
-      "name": "Gabe Field",
-      "jersey": "6",
-      "pos": "D",
-      "GP": 1,
-      "G": 0,
-      "A": 0,
-      "PTS": 0,
-      "PIM": 0,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0
-    },
-    {
       "name": "Antonio Giacalone",
       "jersey": "26",
       "pos": "F",
@@ -115,19 +141,6 @@
       "A": 0,
       "PTS": 0,
       "PIM": 0,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0
-    },
-    {
-      "name": "Jackson Maddock",
-      "jersey": "27",
-      "pos": "F",
-      "GP": 1,
-      "G": 0,
-      "A": 0,
-      "PTS": 0,
-      "PIM": 2,
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0
@@ -180,19 +193,6 @@
       "A": 0,
       "PTS": 0,
       "PIM": 0,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0
-    },
-    {
-      "name": "Nate Spencer",
-      "jersey": "24",
-      "pos": "F",
-      "GP": 1,
-      "G": 0,
-      "A": 0,
-      "PTS": 0,
-      "PIM": 2,
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0
