@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-09-05T01:07:50.176322+00:00",
+  "last_updated": "2026-09-05T01:46:36.252192+00:00",
   "total_games": 44,
   "games": [
     {
@@ -14,12 +14,12 @@
       "opponent_abbr": "PEO",
       "opponent_logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/37c34006-9695-41f7-67e9-47b2dfa6f000/256",
       "location": "Owens Center",
-      "status": "in_progress",
-      "status_code": 1,
+      "status": "final",
+      "status_code": 2,
       "game_type": "regular_season",
       "broadcast": "NATV",
-      "our_score": 0,
-      "opponent_score": 0,
+      "our_score": 3,
+      "opponent_score": 8,
       "overtime": false,
       "attendance": 0,
       "us": {
@@ -27,36 +27,93 @@
         "name": "Wausau Cyclones",
         "abbr": "WAU",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
-        "goals": 0,
-        "result": "",
+        "goals": 3,
+        "result": "L",
         "periods": {
           "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 2,
+          "3": 1
         },
-        "scorers": [],
-        "shots": 0,
-        "pp_goals": 0,
-        "pp_opportunities": 0,
-        "record": ""
+        "scorers": [
+          {
+            "name": "Jacob Maxon",
+            "period": "2",
+            "clock": "15:00"
+          },
+          {
+            "name": "Jacob Maxon",
+            "period": "2",
+            "clock": "13:15"
+          },
+          {
+            "name": "Brayden Myers",
+            "period": "3",
+            "clock": "12:18"
+          }
+        ],
+        "shots": 30,
+        "pp_goals": 1,
+        "pp_opportunities": 4,
+        "record": "0-1-0-0"
       },
       "them": {
         "id": 525851,
         "name": "Peoria Mustangs",
         "abbr": "PEO",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/37c34006-9695-41f7-67e9-47b2dfa6f000/256",
-        "goals": 0,
-        "result": "",
+        "goals": 8,
+        "result": "W",
         "periods": {
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "1": 1,
+          "2": 3,
+          "3": 4
         },
-        "scorers": [],
-        "shots": 0,
-        "pp_goals": 0,
-        "pp_opportunities": 0,
-        "record": ""
+        "scorers": [
+          {
+            "name": "Zach Staelgraeve",
+            "period": "1",
+            "clock": "01:04"
+          },
+          {
+            "name": "Breyon Maroney",
+            "period": "2",
+            "clock": "17:34"
+          },
+          {
+            "name": "Brendan Miller",
+            "period": "2",
+            "clock": "07:06"
+          },
+          {
+            "name": "Landen Smith",
+            "period": "2",
+            "clock": "05:06"
+          },
+          {
+            "name": "Brendan Miller",
+            "period": "3",
+            "clock": "19:25"
+          },
+          {
+            "name": "Hayden Gray",
+            "period": "3",
+            "clock": "18:25"
+          },
+          {
+            "name": "Brendan Miller",
+            "period": "3",
+            "clock": "07:33"
+          },
+          {
+            "name": "Braden Hillebrand",
+            "period": "3",
+            "clock": "02:16"
+          }
+        ],
+        "shots": 37,
+        "pp_goals": 5,
+        "pp_opportunities": 8,
+        "record": "1-0-0-0"
       }
     },
     {
