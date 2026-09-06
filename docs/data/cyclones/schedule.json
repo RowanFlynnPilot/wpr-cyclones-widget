@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-09-06T00:01:15.946000+00:00",
+  "last_updated": "2026-09-06T01:40:38.994705+00:00",
   "total_games": 44,
   "games": [
     {
@@ -54,7 +54,7 @@
         "shots": 30,
         "pp_goals": 1,
         "pp_opportunities": 4,
-        "record": "0-1-0-0"
+        "record": "0-1-1-0"
       },
       "them": {
         "id": 525851,
@@ -113,7 +113,7 @@
         "shots": 37,
         "pp_goals": 5,
         "pp_opportunities": 9,
-        "record": "1-0-0-0"
+        "record": "2-0-0-0"
       }
     },
     {
@@ -127,49 +127,88 @@
       "opponent_abbr": "PEO",
       "opponent_logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/37c34006-9695-41f7-67e9-47b2dfa6f000/256",
       "location": "Owens Center",
-      "status": "in_progress",
-      "status_code": 1,
+      "status": "final",
+      "status_code": 2,
       "game_type": "regular_season",
       "broadcast": "NATV",
-      "our_score": 0,
-      "opponent_score": 0,
-      "overtime": false,
+      "our_score": 3,
+      "opponent_score": 4,
+      "overtime": true,
       "attendance": 0,
       "us": {
         "id": 525857,
         "name": "Wausau Cyclones",
         "abbr": "WAU",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
-        "goals": 0,
-        "result": "",
+        "goals": 3,
+        "result": "L",
         "periods": {
           "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 3,
+          "3": 0,
+          "ot_1": 0
         },
-        "scorers": [],
-        "shots": 0,
-        "pp_goals": 0,
-        "pp_opportunities": 0,
-        "record": "0-1-0-0"
+        "scorers": [
+          {
+            "name": "Jackson Maddock",
+            "period": "2",
+            "clock": "19:09"
+          },
+          {
+            "name": "Jacob Maxon",
+            "period": "2",
+            "clock": "10:08"
+          },
+          {
+            "name": "Nate Spencer",
+            "period": "2",
+            "clock": "08:32"
+          }
+        ],
+        "shots": 32,
+        "pp_goals": 2,
+        "pp_opportunities": 5,
+        "record": "0-1-1-0"
       },
       "them": {
         "id": 525851,
         "name": "Peoria Mustangs",
         "abbr": "PEO",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/37c34006-9695-41f7-67e9-47b2dfa6f000/256",
-        "goals": 0,
-        "result": "",
+        "goals": 4,
+        "result": "W",
         "periods": {
           "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 2,
+          "3": 1,
+          "ot_1": 1
         },
-        "scorers": [],
-        "shots": 0,
-        "pp_goals": 0,
-        "pp_opportunities": 0,
-        "record": "1-0-0-0"
+        "scorers": [
+          {
+            "name": "Brendan Miller",
+            "period": "2",
+            "clock": "06:44"
+          },
+          {
+            "name": "Brendan Miller",
+            "period": "2",
+            "clock": "03:58"
+          },
+          {
+            "name": "Braden Hillebrand",
+            "period": "3",
+            "clock": "13:18"
+          },
+          {
+            "name": "Landen Smith",
+            "period": "ot_1",
+            "clock": "01:49"
+          }
+        ],
+        "shots": 46,
+        "pp_goals": 2,
+        "pp_opportunities": 5,
+        "record": "2-0-0-0"
       }
     },
     {

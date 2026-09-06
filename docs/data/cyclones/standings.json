@@ -1,7 +1,7 @@
 {
   "season_name": "2026-27 NA3HL",
   "division": "Central Division",
-  "last_updated": "2026-09-06T00:01:16.152618+00:00",
+  "last_updated": "2026-09-06T01:40:39.232456+00:00",
   "teams": [
     {
       "rank": 1,
@@ -9,22 +9,42 @@
       "name": "Peoria Mustangs",
       "abbr": "PEO",
       "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/37c34006-9695-41f7-67e9-47b2dfa6f000/256",
-      "GP": 1,
-      "W": 1,
+      "GP": 2,
+      "W": 2,
       "L": 0,
       "OTL": 0,
       "SOL": 0,
-      "PTS": 2,
-      "GF": 8,
-      "GA": 3,
-      "STK": "Won 1",
-      "P10": "1-0-0-0",
-      "record": "1-0-0-0",
-      "home_record": "1-0-0-0",
+      "PTS": 4,
+      "GF": 12,
+      "GA": 6,
+      "STK": "Won 2",
+      "P10": "2-0-0-0",
+      "record": "2-0-0-0",
+      "home_record": "2-0-0-0",
       "away_record": "0-0-0-0"
     },
     {
       "rank": 2,
+      "team_id": 525857,
+      "name": "Wausau Cyclones",
+      "abbr": "WAU",
+      "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
+      "GP": 2,
+      "W": 0,
+      "L": 1,
+      "OTL": 1,
+      "SOL": 0,
+      "PTS": 1,
+      "GF": 6,
+      "GA": 12,
+      "STK": "Lost 2",
+      "P10": "0-1-1-0",
+      "record": "0-1-1-0",
+      "home_record": "0-0-0-0",
+      "away_record": "0-1-1-0"
+    },
+    {
+      "rank": 3,
       "team_id": 525852,
       "name": "Rochester Grizzlies",
       "abbr": "ROC",
@@ -44,7 +64,7 @@
       "away_record": "0-0-0-0"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "team_id": 525854,
       "name": "St. Louis Jr. Blues",
       "abbr": "STL",
@@ -64,7 +84,7 @@
       "away_record": "0-0-0-0"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "team_id": 525847,
       "name": "West Bend Power",
       "abbr": "WBD",
@@ -84,7 +104,7 @@
       "away_record": "0-0-0-0"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "team_id": 525860,
       "name": "Wisconsin Woodsmen",
       "abbr": "WIS",
@@ -104,7 +124,7 @@
       "away_record": "0-0-0-0"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "team_id": 525875,
       "name": "Fox Cities Forge",
       "abbr": "FOX",
@@ -122,26 +142,6 @@
       "record": "0-0-0-0",
       "home_record": "0-0-0-0",
       "away_record": "0-0-0-0"
-    },
-    {
-      "rank": 7,
-      "team_id": 525857,
-      "name": "Wausau Cyclones",
-      "abbr": "WAU",
-      "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
-      "GP": 1,
-      "W": 0,
-      "L": 1,
-      "OTL": 0,
-      "SOL": 0,
-      "PTS": 0,
-      "GF": 3,
-      "GA": 8,
-      "STK": "Lost 1",
-      "P10": "0-1-0-0",
-      "record": "0-1-0-0",
-      "home_record": "0-0-0-0",
-      "away_record": "0-1-0-0"
     }
   ]
 }
