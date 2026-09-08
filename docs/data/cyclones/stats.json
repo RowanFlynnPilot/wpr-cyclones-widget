@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-09-08T01:49:27.368423+00:00",
+  "last_updated": "2026-09-08T06:40:22.210733+00:00",
   "skaters": [
     {
       "name": "Nate Spencer",
@@ -29,14 +29,14 @@
       "PTSPG": 1.5
     },
     {
-      "name": "Brady Schutte",
-      "jersey": "10",
-      "pos": "F",
+      "name": "Gabe Field",
+      "jersey": "6",
+      "pos": "D",
       "GP": 2,
       "G": 0,
       "A": 3,
       "PTS": 3,
-      "PIM": 2,
+      "PIM": 17,
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 1.5
@@ -55,14 +55,14 @@
       "PTSPG": 1
     },
     {
-      "name": "Gabe Field",
-      "jersey": "6",
-      "pos": "D",
+      "name": "Brady Schutte",
+      "jersey": "10",
+      "pos": "F",
       "GP": 2,
       "G": 0,
       "A": 2,
       "PTS": 2,
-      "PIM": 17,
+      "PIM": 2,
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 1

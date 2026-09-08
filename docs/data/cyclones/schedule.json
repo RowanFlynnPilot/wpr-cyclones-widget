@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-09-08T01:49:26.316856+00:00",
+  "last_updated": "2026-09-08T06:40:21.528091+00:00",
   "total_games": 44,
   "games": [
     {
@@ -408,7 +408,7 @@
       "number": "220",
       "date": "2026-10-24",
       "day": "Sat",
-      "time": "7:30 PM",
+      "time": "7:00 PM",
       "home": false,
       "opponent": "Fox Cities Forge",
       "opponent_abbr": "FOX",
@@ -552,7 +552,7 @@
       "number": "408",
       "date": "2026-12-05",
       "day": "Sat",
-      "time": "7:30 PM",
+      "time": "7:00 PM",
       "home": false,
       "opponent": "Fox Cities Forge",
       "opponent_abbr": "FOX",
