@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-09-11T23:23:09.553199+00:00",
+  "last_updated": "2026-09-12T01:16:25.945704+00:00",
   "total_games": 44,
   "games": [
     {
@@ -222,10 +222,50 @@
       "opponent_abbr": "STL",
       "opponent_logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/9c0f087d-317e-470b-70e4-ec17776c0000/256",
       "location": "Affton Ice Rink",
-      "status": "scheduled",
-      "status_code": 0,
+      "status": "in_progress",
+      "status_code": 1,
       "game_type": "regular_season",
-      "broadcast": "NATV"
+      "broadcast": "NATV",
+      "our_score": 0,
+      "opponent_score": 0,
+      "overtime": false,
+      "attendance": 0,
+      "us": {
+        "id": 525857,
+        "name": "Wausau Cyclones",
+        "abbr": "WAU",
+        "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
+        "goals": 0,
+        "result": "",
+        "periods": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "scorers": [],
+        "shots": 0,
+        "pp_goals": 0,
+        "pp_opportunities": 0,
+        "record": "0-1-1-0"
+      },
+      "them": {
+        "id": 525854,
+        "name": "St. Louis Jr. Blues",
+        "abbr": "STL",
+        "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/9c0f087d-317e-470b-70e4-ec17776c0000/256",
+        "goals": 0,
+        "result": "",
+        "periods": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "scorers": [],
+        "shots": 0,
+        "pp_goals": 0,
+        "pp_opportunities": 0,
+        "record": ""
+      }
     },
     {
       "id": 2917425,
