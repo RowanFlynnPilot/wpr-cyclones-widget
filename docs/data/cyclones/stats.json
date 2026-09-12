@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-09-12T13:55:37.889134+00:00",
+  "last_updated": "2026-09-12T20:13:38.227360+00:00",
   "skaters": [
     {
       "name": "Nate Spencer",
@@ -68,6 +68,19 @@
       "PTSPG": 0.67
     },
     {
+      "name": "Owen Renslow",
+      "jersey": "16",
+      "pos": "F",
+      "GP": 3,
+      "G": 0,
+      "A": 2,
+      "PTS": 2,
+      "PIM": 2,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.67
+    },
+    {
       "name": "Brady Schutte",
       "jersey": "10",
       "pos": "F",
@@ -107,21 +120,21 @@
       "PTSPG": 0.33
     },
     {
-      "name": "Lucas Mankoff",
-      "jersey": "8",
-      "pos": "F",
+      "name": "Sean Hall",
+      "jersey": "11",
+      "pos": "D",
       "GP": 3,
       "G": 0,
       "A": 1,
       "PTS": 1,
-      "PIM": 2,
+      "PIM": 4,
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0.33
     },
     {
-      "name": "Owen Renslow",
-      "jersey": "16",
+      "name": "Lucas Mankoff",
+      "jersey": "8",
       "pos": "F",
       "GP": 3,
       "G": 0,
@@ -167,19 +180,6 @@
       "A": 0,
       "PTS": 0,
       "PIM": 0,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0
-    },
-    {
-      "name": "Sean Hall",
-      "jersey": "11",
-      "pos": "D",
-      "GP": 3,
-      "G": 0,
-      "A": 0,
-      "PTS": 0,
-      "PIM": 4,
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0
