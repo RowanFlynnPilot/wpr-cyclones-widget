@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-09-12T01:55:39.974747+00:00",
+  "last_updated": "2026-09-12T06:40:43.803038+00:00",
   "total_games": 44,
   "games": [
     {
@@ -54,7 +54,7 @@
         "shots": 30,
         "pp_goals": 1,
         "pp_opportunities": 4,
-        "record": "0-1-1-0"
+        "record": "0-2-1-0"
       },
       "them": {
         "id": 525851,
@@ -168,7 +168,7 @@
         "shots": 32,
         "pp_goals": 2,
         "pp_opportunities": 5,
-        "record": "0-1-1-0"
+        "record": "0-2-1-0"
       },
       "them": {
         "id": 525851,
@@ -222,49 +222,81 @@
       "opponent_abbr": "STL",
       "opponent_logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/9c0f087d-317e-470b-70e4-ec17776c0000/256",
       "location": "Affton Ice Rink",
-      "status": "in_progress",
-      "status_code": 1,
+      "status": "final",
+      "status_code": 2,
       "game_type": "regular_season",
       "broadcast": "NATV",
-      "our_score": 0,
-      "opponent_score": 0,
+      "our_score": 2,
+      "opponent_score": 4,
       "overtime": false,
-      "attendance": 0,
+      "attendance": 225,
       "us": {
         "id": 525857,
         "name": "Wausau Cyclones",
         "abbr": "WAU",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
-        "goals": 0,
-        "result": "",
+        "goals": 2,
+        "result": "L",
         "periods": {
-          "1": 0,
-          "2": 0,
+          "1": 1,
+          "2": 1,
           "3": 0
         },
-        "scorers": [],
-        "shots": 0,
+        "scorers": [
+          {
+            "name": "Brayden Myers",
+            "period": "1",
+            "clock": "06:11"
+          },
+          {
+            "name": "Bryton Thaxton",
+            "period": "2",
+            "clock": "13:54"
+          }
+        ],
+        "shots": 39,
         "pp_goals": 0,
         "pp_opportunities": 0,
-        "record": "0-1-1-0"
+        "record": "0-2-1-0"
       },
       "them": {
         "id": 525854,
         "name": "St. Louis Jr. Blues",
         "abbr": "STL",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/9c0f087d-317e-470b-70e4-ec17776c0000/256",
-        "goals": 0,
-        "result": "",
+        "goals": 4,
+        "result": "W",
         "periods": {
           "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 2,
+          "3": 2
         },
-        "scorers": [],
-        "shots": 0,
-        "pp_goals": 0,
-        "pp_opportunities": 0,
-        "record": ""
+        "scorers": [
+          {
+            "name": "Finn Boehm",
+            "period": "2",
+            "clock": "10:42"
+          },
+          {
+            "name": "Jack Vahle",
+            "period": "2",
+            "clock": "06:35"
+          },
+          {
+            "name": "Robert Kelly",
+            "period": "3",
+            "clock": "06:56"
+          },
+          {
+            "name": "Stephen 'Fonz' Craig",
+            "period": "3",
+            "clock": "01:54"
+          }
+        ],
+        "shots": 31,
+        "pp_goals": 1,
+        "pp_opportunities": 4,
+        "record": "1-0-0-0"
       }
     },
     {
