@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-09-14T07:58:58.931200+00:00",
+  "last_updated": "2026-09-14T16:52:04.891105+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -34,12 +34,12 @@
       "pos": "F",
       "GP": 4,
       "G": 2,
-      "A": 1,
-      "PTS": 3,
+      "A": 2,
+      "PTS": 4,
       "PIM": 6,
       "PPG": 0,
       "GWG": 0,
-      "PTSPG": 0.75
+      "PTSPG": 1
     },
     {
       "name": "Jacob Maxon",
