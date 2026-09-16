@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-09-16T15:21:30.612306+00:00",
+  "last_updated": "2026-09-16T20:54:39.062930+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -219,6 +219,19 @@
       "A": 0,
       "PTS": 0,
       "PIM": 4,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0
+    },
+    {
+      "name": "Michael Wolfenberg",
+      "jersey": "23",
+      "pos": "F",
+      "GP": 1,
+      "G": 0,
+      "A": 0,
+      "PTS": 0,
+      "PIM": 0,
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0
