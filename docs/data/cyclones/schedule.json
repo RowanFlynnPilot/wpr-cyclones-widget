@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-09-19T21:08:33.659686+00:00",
+  "last_updated": "2026-09-19T23:15:41.148214+00:00",
   "total_games": 44,
   "games": [
     {
@@ -513,10 +513,50 @@
       "opponent_abbr": "ROC",
       "opponent_logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/bc122334-25ac-4936-1ebe-f2e2c2ef7b00/256",
       "location": "Rochester Recreation Center",
-      "status": "scheduled",
-      "status_code": 0,
+      "status": "in_progress",
+      "status_code": 1,
       "game_type": "regular_season",
-      "broadcast": "NATV"
+      "broadcast": "NATV",
+      "our_score": 0,
+      "opponent_score": 0,
+      "overtime": false,
+      "attendance": 0,
+      "us": {
+        "id": 525857,
+        "name": "Wausau Cyclones",
+        "abbr": "WAU",
+        "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
+        "goals": 0,
+        "result": "",
+        "periods": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "scorers": [],
+        "shots": 0,
+        "pp_goals": 0,
+        "pp_opportunities": 0,
+        "record": "1-3-1-0"
+      },
+      "them": {
+        "id": 525852,
+        "name": "Rochester Grizzlies",
+        "abbr": "ROC",
+        "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/bc122334-25ac-4936-1ebe-f2e2c2ef7b00/256",
+        "goals": 0,
+        "result": "",
+        "periods": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "scorers": [],
+        "shots": 0,
+        "pp_goals": 0,
+        "pp_opportunities": 0,
+        "record": "2-0-0-0"
+      }
     },
     {
       "id": 2917472,
