@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-09-19T07:25:19.670376+00:00",
+  "last_updated": "2026-09-19T14:13:27.981432+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -21,12 +21,12 @@
       "pos": "D",
       "GP": 5,
       "G": 0,
-      "A": 6,
-      "PTS": 6,
+      "A": 7,
+      "PTS": 7,
       "PIM": 17,
       "PPG": 0,
       "GWG": 0,
-      "PTSPG": 1.2
+      "PTSPG": 1.4
     },
     {
       "name": "Nate Spencer",
@@ -53,6 +53,19 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0.6
+    },
+    {
+      "name": "Maksim Salienko",
+      "jersey": "28",
+      "pos": "F",
+      "GP": 3,
+      "G": 1,
+      "A": 2,
+      "PTS": 3,
+      "PIM": 0,
+      "PPG": 0,
+      "GWG": 1,
+      "PTSPG": 1
     },
     {
       "name": "Brady Schutte",
@@ -107,19 +120,6 @@
       "PTSPG": 0.4
     },
     {
-      "name": "Maksim Salienko",
-      "jersey": "28",
-      "pos": "F",
-      "GP": 3,
-      "G": 1,
-      "A": 1,
-      "PTS": 2,
-      "PIM": 0,
-      "PPG": 0,
-      "GWG": 1,
-      "PTSPG": 0.67
-    },
-    {
       "name": "Cade Doud",
       "jersey": "19",
       "pos": "F",
@@ -159,19 +159,6 @@
       "PTSPG": 0.4
     },
     {
-      "name": "Joel Anderson",
-      "jersey": "7",
-      "pos": "D",
-      "GP": 1,
-      "G": 0,
-      "A": 1,
-      "PTS": 1,
-      "PIM": 2,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 1
-    },
-    {
       "name": "Antonio Giacalone",
       "jersey": "26",
       "pos": "F",
@@ -196,6 +183,19 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0.2
+    },
+    {
+      "name": "Joel Anderson",
+      "jersey": "7",
+      "pos": "D",
+      "GP": 1,
+      "G": 0,
+      "A": 0,
+      "PTS": 0,
+      "PIM": 2,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0
     },
     {
       "name": "Alec Mellon",
