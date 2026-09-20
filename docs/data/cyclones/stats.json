@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-09-20T21:06:41.267046+00:00",
+  "last_updated": "2026-09-20T23:19:22.940753+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -133,19 +133,6 @@
       "PTSPG": 0.33
     },
     {
-      "name": "Frank Goodman",
-      "jersey": "9",
-      "pos": "D",
-      "GP": 6,
-      "G": 0,
-      "A": 2,
-      "PTS": 2,
-      "PIM": 8,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.33
-    },
-    {
       "name": "Lucas Mankoff",
       "jersey": "8",
       "pos": "F",
@@ -185,6 +172,32 @@
       "PTSPG": 0.17
     },
     {
+      "name": "Frank Goodman",
+      "jersey": "9",
+      "pos": "D",
+      "GP": 6,
+      "G": 0,
+      "A": 1,
+      "PTS": 1,
+      "PIM": 8,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.17
+    },
+    {
+      "name": "Alec Mellon",
+      "jersey": "14",
+      "pos": "D",
+      "GP": 6,
+      "G": 0,
+      "A": 1,
+      "PTS": 1,
+      "PIM": 30,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.17
+    },
+    {
       "name": "Joel Anderson",
       "jersey": "7",
       "pos": "D",
@@ -193,19 +206,6 @@
       "A": 0,
       "PTS": 0,
       "PIM": 4,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0
-    },
-    {
-      "name": "Alec Mellon",
-      "jersey": "14",
-      "pos": "D",
-      "GP": 6,
-      "G": 0,
-      "A": 0,
-      "PTS": 0,
-      "PIM": 30,
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0
