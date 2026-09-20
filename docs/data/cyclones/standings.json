@@ -1,10 +1,30 @@
 {
   "season_name": "2026-27 NA3HL",
   "division": "Central Division",
-  "last_updated": "2026-09-20T02:05:59.852197+00:00",
+  "last_updated": "2026-09-20T07:49:10.944956+00:00",
   "teams": [
     {
       "rank": 1,
+      "team_id": 525860,
+      "name": "Wisconsin Woodsmen",
+      "abbr": "WIS",
+      "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/112b08d7-9b8b-4a73-5640-cbef70d52500/256",
+      "GP": 4,
+      "W": 3,
+      "L": 0,
+      "OTL": 1,
+      "SOL": 0,
+      "PTS": 7,
+      "GF": 17,
+      "GA": 10,
+      "STK": "Won 3",
+      "P10": "3-0-1-0",
+      "record": "3-0-1-0",
+      "home_record": "2-0-0-0",
+      "away_record": "1-0-1-0"
+    },
+    {
+      "rank": 2,
       "team_id": 525852,
       "name": "Rochester Grizzlies",
       "abbr": "ROC",
@@ -24,7 +44,7 @@
       "away_record": "0-0-0-0"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "team_id": 525851,
       "name": "Peoria Mustangs",
       "abbr": "PEO",
@@ -44,7 +64,7 @@
       "away_record": "0-0-0-0"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team_id": 525847,
       "name": "West Bend Power",
       "abbr": "WBD",
@@ -64,44 +84,24 @@
       "away_record": "2-0-0-1"
     },
     {
-      "rank": 4,
-      "team_id": 525860,
-      "name": "Wisconsin Woodsmen",
-      "abbr": "WIS",
-      "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/112b08d7-9b8b-4a73-5640-cbef70d52500/256",
-      "GP": 3,
-      "W": 2,
-      "L": 0,
-      "OTL": 1,
-      "SOL": 0,
-      "PTS": 5,
-      "GF": 14,
-      "GA": 9,
-      "STK": "Won 2",
-      "P10": "2-0-1-0",
-      "record": "2-0-1-0",
-      "home_record": "1-0-0-0",
-      "away_record": "1-0-1-0"
-    },
-    {
       "rank": 5,
       "team_id": 525854,
       "name": "St. Louis Jr. Blues",
       "abbr": "STL",
       "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/9c0f087d-317e-470b-70e4-ec17776c0000/256",
-      "GP": 3,
+      "GP": 4,
       "W": 1,
-      "L": 1,
+      "L": 2,
       "OTL": 1,
       "SOL": 0,
       "PTS": 3,
-      "GF": 7,
-      "GA": 8,
-      "STK": "Lost 2",
-      "P10": "1-1-1-0",
-      "record": "1-1-1-0",
+      "GF": 8,
+      "GA": 11,
+      "STK": "Lost 3",
+      "P10": "1-2-1-0",
+      "record": "1-2-1-0",
       "home_record": "1-0-1-0",
-      "away_record": "0-1-0-0"
+      "away_record": "0-2-0-0"
     },
     {
       "rank": 6,
