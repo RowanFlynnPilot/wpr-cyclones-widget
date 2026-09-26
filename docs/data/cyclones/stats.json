@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-09-26T14:55:37.885132+00:00",
+  "last_updated": "2026-09-26T20:40:50.344018+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -8,12 +8,12 @@
       "pos": "F",
       "GP": 7,
       "G": 4,
-      "A": 4,
-      "PTS": 8,
+      "A": 5,
+      "PTS": 9,
       "PIM": 2,
       "PPG": 1,
       "GWG": 0,
-      "PTSPG": 1.14
+      "PTSPG": 1.29
     },
     {
       "name": "Gabe Field",
@@ -34,25 +34,77 @@
       "pos": "F",
       "GP": 7,
       "G": 3,
-      "A": 3,
-      "PTS": 6,
+      "A": 2,
+      "PTS": 5,
       "PIM": 6,
       "PPG": 0,
       "GWG": 0,
-      "PTSPG": 0.86
+      "PTSPG": 0.71
     },
     {
       "name": "Bryton Thaxton",
       "jersey": "15",
       "pos": "F",
       "GP": 7,
-      "G": 3,
+      "G": 2,
       "A": 2,
-      "PTS": 5,
+      "PTS": 4,
       "PIM": 8,
       "PPG": 1,
       "GWG": 0,
-      "PTSPG": 0.71
+      "PTSPG": 0.57
+    },
+    {
+      "name": "Lucas Mankoff",
+      "jersey": "8",
+      "pos": "F",
+      "GP": 7,
+      "G": 1,
+      "A": 3,
+      "PTS": 4,
+      "PIM": 2,
+      "PPG": 1,
+      "GWG": 0,
+      "PTSPG": 0.57
+    },
+    {
+      "name": "Maksim Salienko",
+      "jersey": "28",
+      "pos": "F",
+      "GP": 5,
+      "G": 1,
+      "A": 3,
+      "PTS": 4,
+      "PIM": 2,
+      "PPG": 0,
+      "GWG": 1,
+      "PTSPG": 0.8
+    },
+    {
+      "name": "Brayden Myers",
+      "jersey": "22",
+      "pos": "F",
+      "GP": 7,
+      "G": 3,
+      "A": 0,
+      "PTS": 3,
+      "PIM": 2,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.43
+    },
+    {
+      "name": "Jacob Maxon",
+      "jersey": "20",
+      "pos": "F",
+      "GP": 7,
+      "G": 2,
+      "A": 1,
+      "PTS": 3,
+      "PIM": 4,
+      "PPG": 2,
+      "GWG": 0,
+      "PTSPG": 0.43
     },
     {
       "name": "Sean Hall",
@@ -68,32 +120,6 @@
       "PTSPG": 0.43
     },
     {
-      "name": "Lucas Mankoff",
-      "jersey": "8",
-      "pos": "F",
-      "GP": 7,
-      "G": 1,
-      "A": 2,
-      "PTS": 3,
-      "PIM": 2,
-      "PPG": 1,
-      "GWG": 0,
-      "PTSPG": 0.43
-    },
-    {
-      "name": "Maksim Salienko",
-      "jersey": "28",
-      "pos": "F",
-      "GP": 5,
-      "G": 1,
-      "A": 2,
-      "PTS": 3,
-      "PIM": 2,
-      "PPG": 0,
-      "GWG": 1,
-      "PTSPG": 0.6
-    },
-    {
       "name": "Brady Schutte",
       "jersey": "10",
       "pos": "F",
@@ -105,32 +131,6 @@
       "PPG": 1,
       "GWG": 0,
       "PTSPG": 0.43
-    },
-    {
-      "name": "Jacob Maxon",
-      "jersey": "20",
-      "pos": "F",
-      "GP": 7,
-      "G": 2,
-      "A": 0,
-      "PTS": 2,
-      "PIM": 4,
-      "PPG": 2,
-      "GWG": 0,
-      "PTSPG": 0.29
-    },
-    {
-      "name": "Brayden Myers",
-      "jersey": "22",
-      "pos": "F",
-      "GP": 7,
-      "G": 2,
-      "A": 0,
-      "PTS": 2,
-      "PIM": 2,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.29
     },
     {
       "name": "Cade Doud",
@@ -172,6 +172,32 @@
       "PTSPG": 0.25
     },
     {
+      "name": "Joel Anderson",
+      "jersey": "7",
+      "pos": "D",
+      "GP": 3,
+      "G": 0,
+      "A": 1,
+      "PTS": 1,
+      "PIM": 4,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.33
+    },
+    {
+      "name": "Kaleb Fornetti",
+      "jersey": "5",
+      "pos": "D",
+      "GP": 1,
+      "G": 0,
+      "A": 1,
+      "PTS": 1,
+      "PIM": 4,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 1
+    },
+    {
       "name": "Antonio Giacalone",
       "jersey": "26",
       "pos": "F",
@@ -209,32 +235,6 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0.14
-    },
-    {
-      "name": "Joel Anderson",
-      "jersey": "7",
-      "pos": "D",
-      "GP": 3,
-      "G": 0,
-      "A": 0,
-      "PTS": 0,
-      "PIM": 4,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0
-    },
-    {
-      "name": "Kaleb Fornetti",
-      "jersey": "5",
-      "pos": "D",
-      "GP": 1,
-      "G": 0,
-      "A": 0,
-      "PTS": 0,
-      "PIM": 4,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0
     },
     {
       "name": "Colton Knutsen",
@@ -285,8 +285,8 @@
       "L": 1,
       "OTL": 1,
       "GA": 10,
-      "SA": 96,
-      "SVPCT": 0.896,
+      "SA": 98,
+      "SVPCT": 0.898,
       "GAA": 3.31,
       "SO": 0
     },

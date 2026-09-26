@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-09-26T14:55:36.941149+00:00",
+  "last_updated": "2026-09-26T20:40:49.571048+00:00",
   "total_games": 44,
   "games": [
     {
@@ -623,7 +623,7 @@
             "clock": "09:49"
           },
           {
-            "name": "Bryton Thaxton",
+            "name": "Brayden Myers",
             "period": "2",
             "clock": "17:08"
           },
@@ -638,7 +638,7 @@
             "clock": "00:46"
           }
         ],
-        "shots": 32,
+        "shots": 40,
         "pp_goals": 2,
         "pp_opportunities": 6,
         "record": "2-4-1-0"
@@ -667,7 +667,7 @@
             "clock": "02:08"
           }
         ],
-        "shots": 19,
+        "shots": 21,
         "pp_goals": 0,
         "pp_opportunities": 6,
         "record": "0-1-0-0"
