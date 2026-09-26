@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-09-26T02:20:37.002086+00:00",
+  "last_updated": "2026-09-26T07:52:42.827717+00:00",
   "total_games": 44,
   "games": [
     {
@@ -54,7 +54,7 @@
         "shots": 30,
         "pp_goals": 1,
         "pp_opportunities": 4,
-        "record": "1-4-1-0"
+        "record": "2-4-1-0"
       },
       "them": {
         "id": 525851,
@@ -168,7 +168,7 @@
         "shots": 32,
         "pp_goals": 2,
         "pp_opportunities": 5,
-        "record": "1-4-1-0"
+        "record": "2-4-1-0"
       },
       "them": {
         "id": 525851,
@@ -257,7 +257,7 @@
         "shots": 39,
         "pp_goals": 0,
         "pp_opportunities": 0,
-        "record": "1-4-1-0"
+        "record": "2-4-1-0"
       },
       "them": {
         "id": 525854,
@@ -296,7 +296,7 @@
         "shots": 31,
         "pp_goals": 1,
         "pp_opportunities": 4,
-        "record": "1-2-1-0"
+        "record": "2-2-1-0"
       }
     },
     {
@@ -356,7 +356,7 @@
         "shots": 37,
         "pp_goals": 0,
         "pp_opportunities": 1,
-        "record": "1-4-1-0"
+        "record": "2-4-1-0"
       },
       "them": {
         "id": 525854,
@@ -391,7 +391,7 @@
         "shots": 25,
         "pp_goals": 0,
         "pp_opportunities": 1,
-        "record": "1-2-1-0"
+        "record": "2-2-1-0"
       }
     },
     {
@@ -445,7 +445,7 @@
         "shots": 23,
         "pp_goals": 2,
         "pp_opportunities": 5,
-        "record": "1-4-1-0"
+        "record": "2-4-1-0"
       },
       "them": {
         "id": 525852,
@@ -499,7 +499,7 @@
         "shots": 45,
         "pp_goals": 1,
         "pp_opportunities": 2,
-        "record": "3-0-0-0"
+        "record": "3-0-0-1"
       }
     },
     {
@@ -543,7 +543,7 @@
         "shots": 28,
         "pp_goals": 0,
         "pp_opportunities": 3,
-        "record": "1-4-1-0"
+        "record": "2-4-1-0"
       },
       "them": {
         "id": 525852,
@@ -582,7 +582,7 @@
         "shots": 31,
         "pp_goals": 0,
         "pp_opportunities": 5,
-        "record": "3-0-0-0"
+        "record": "3-0-0-1"
       }
     },
     {
@@ -596,12 +596,12 @@
       "opponent_abbr": "FOX",
       "opponent_logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/8c9f6ea7-077a-4b4a-0c74-2a75b9db8400/256",
       "location": "Appleton Family Ice Center",
-      "status": "in_progress",
-      "status_code": 1,
+      "status": "final",
+      "status_code": 2,
       "game_type": "regular_season",
       "broadcast": "NATV",
-      "our_score": 0,
-      "opponent_score": 0,
+      "our_score": 4,
+      "opponent_score": 2,
       "overtime": false,
       "attendance": 0,
       "us": {
@@ -609,36 +609,68 @@
         "name": "Wausau Cyclones",
         "abbr": "WAU",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
-        "goals": 0,
-        "result": "",
+        "goals": 4,
+        "result": "W",
         "periods": {
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "1": 1,
+          "2": 1,
+          "3": 2
         },
-        "scorers": [],
-        "shots": 0,
-        "pp_goals": 0,
-        "pp_opportunities": 0,
-        "record": "1-4-1-0"
+        "scorers": [
+          {
+            "name": "Lucas Mankoff",
+            "period": "1",
+            "clock": "09:49"
+          },
+          {
+            "name": "Bryton Thaxton",
+            "period": "2",
+            "clock": "17:08"
+          },
+          {
+            "name": "Gabe Field",
+            "period": "3",
+            "clock": "14:54"
+          },
+          {
+            "name": "Michael Wolfenberg",
+            "period": "3",
+            "clock": "00:46"
+          }
+        ],
+        "shots": 32,
+        "pp_goals": 2,
+        "pp_opportunities": 6,
+        "record": "2-4-1-0"
       },
       "them": {
         "id": 525875,
         "name": "Fox Cities Forge",
         "abbr": "FOX",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/8c9f6ea7-077a-4b4a-0c74-2a75b9db8400/256",
-        "goals": 0,
-        "result": "",
+        "goals": 2,
+        "result": "L",
         "periods": {
-          "1": 0,
-          "2": 0,
+          "1": 1,
+          "2": 1,
           "3": 0
         },
-        "scorers": [],
-        "shots": 0,
+        "scorers": [
+          {
+            "name": "Jonah Dickens",
+            "period": "1",
+            "clock": "07:18"
+          },
+          {
+            "name": "Cole Macdonald",
+            "period": "2",
+            "clock": "02:08"
+          }
+        ],
+        "shots": 19,
         "pp_goals": 0,
-        "pp_opportunities": 0,
-        "record": ""
+        "pp_opportunities": 4,
+        "record": "0-1-0-0"
       }
     },
     {
