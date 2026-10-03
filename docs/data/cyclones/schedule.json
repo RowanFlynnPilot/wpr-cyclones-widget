@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-10-03T02:41:17.814825+00:00",
+  "last_updated": "2026-10-03T08:40:12.236764+00:00",
   "total_games": 44,
   "games": [
     {
@@ -113,7 +113,7 @@
         "shots": 37,
         "pp_goals": 5,
         "pp_opportunities": 9,
-        "record": "3-3-0-0"
+        "record": "4-3-0-0"
       }
     },
     {
@@ -208,7 +208,7 @@
         "shots": 46,
         "pp_goals": 2,
         "pp_opportunities": 5,
-        "record": "3-3-0-0"
+        "record": "4-3-0-0"
       }
     },
     {
@@ -296,7 +296,7 @@
         "shots": 31,
         "pp_goals": 1,
         "pp_opportunities": 4,
-        "record": "2-2-2-0"
+        "record": "2-2-3-0"
       }
     },
     {
@@ -391,7 +391,7 @@
         "shots": 25,
         "pp_goals": 0,
         "pp_opportunities": 1,
-        "record": "2-2-2-0"
+        "record": "2-2-3-0"
       }
     },
     {
@@ -670,7 +670,7 @@
         "shots": 21,
         "pp_goals": 0,
         "pp_opportunities": 6,
-        "record": "0-2-0-0"
+        "record": "0-3-0-0"
       }
     },
     {
@@ -773,7 +773,7 @@
         "shots": 22,
         "pp_goals": 1,
         "pp_opportunities": 5,
-        "record": "0-2-0-0"
+        "record": "0-3-0-0"
       }
     },
     {
