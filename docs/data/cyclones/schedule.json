@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-10-03T21:51:50.074897+00:00",
+  "last_updated": "2026-10-04T00:09:50.469406+00:00",
   "total_games": 44,
   "games": [
     {
@@ -787,10 +787,50 @@
       "opponent_abbr": "WIS",
       "opponent_logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/112b08d7-9b8b-4a73-5640-cbef70d52500/256",
       "location": "Tomah Ice Center",
-      "status": "scheduled",
-      "status_code": 0,
+      "status": "in_progress",
+      "status_code": 1,
       "game_type": "regular_season",
-      "broadcast": "NATV"
+      "broadcast": "NATV",
+      "our_score": 0,
+      "opponent_score": 0,
+      "overtime": false,
+      "attendance": 0,
+      "us": {
+        "id": 525857,
+        "name": "Wausau Cyclones",
+        "abbr": "WAU",
+        "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
+        "goals": 0,
+        "result": "",
+        "periods": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "scorers": [],
+        "shots": 0,
+        "pp_goals": 0,
+        "pp_opportunities": 0,
+        "record": "3-4-1-0"
+      },
+      "them": {
+        "id": 525860,
+        "name": "Wisconsin Woodsmen",
+        "abbr": "WIS",
+        "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/112b08d7-9b8b-4a73-5640-cbef70d52500/256",
+        "goals": 0,
+        "result": "",
+        "periods": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "scorers": [],
+        "shots": 0,
+        "pp_goals": 0,
+        "pp_opportunities": 0,
+        "record": "4-2-1-0"
+      }
     },
     {
       "id": 2917537,
