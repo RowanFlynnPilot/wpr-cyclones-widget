@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-10-04T22:01:58.872963+00:00",
+  "last_updated": "2026-10-05T01:03:15.906623+00:00",
   "skaters": [
     {
       "name": "Gabe Field",
@@ -55,6 +55,19 @@
       "PTSPG": 0.78
     },
     {
+      "name": "Bryton Thaxton",
+      "jersey": "15",
+      "pos": "F",
+      "GP": 9,
+      "G": 4,
+      "A": 3,
+      "PTS": 7,
+      "PIM": 8,
+      "PPG": 1,
+      "GWG": 0,
+      "PTSPG": 0.78
+    },
+    {
       "name": "Lucas Mankoff",
       "jersey": "8",
       "pos": "F",
@@ -77,19 +90,6 @@
       "PTS": 6,
       "PIM": 6,
       "PPG": 3,
-      "GWG": 0,
-      "PTSPG": 0.67
-    },
-    {
-      "name": "Bryton Thaxton",
-      "jersey": "15",
-      "pos": "F",
-      "GP": 9,
-      "G": 4,
-      "A": 2,
-      "PTS": 6,
-      "PIM": 8,
-      "PPG": 1,
       "GWG": 0,
       "PTSPG": 0.67
     },
@@ -146,19 +146,6 @@
       "PTSPG": 0.8
     },
     {
-      "name": "Frank Goodman",
-      "jersey": "9",
-      "pos": "D",
-      "GP": 9,
-      "G": 1,
-      "A": 2,
-      "PTS": 3,
-      "PIM": 8,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.33
-    },
-    {
       "name": "Sean Hall",
       "jersey": "11",
       "pos": "D",
@@ -209,6 +196,19 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 1
+    },
+    {
+      "name": "Frank Goodman",
+      "jersey": "9",
+      "pos": "D",
+      "GP": 9,
+      "G": 1,
+      "A": 1,
+      "PTS": 2,
+      "PIM": 8,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.22
     },
     {
       "name": "Jackson Schroeder",
