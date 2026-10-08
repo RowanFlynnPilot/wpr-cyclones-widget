@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-10-08T10:46:37.668080+00:00",
+  "last_updated": "2026-10-08T17:46:57.957772+00:00",
   "skaters": [
     {
       "name": "Gabe Field",
@@ -222,19 +222,6 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 2
-    },
-    {
-      "name": "Cade Doud",
-      "jersey": "19",
-      "pos": "F",
-      "GP": 8,
-      "G": 0,
-      "A": 2,
-      "PTS": 2,
-      "PIM": 0,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.25
     },
     {
       "name": "Colton Knutsen",
