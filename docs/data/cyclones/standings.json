@@ -1,7 +1,7 @@
 {
   "season_name": "2026-27 NA3HL",
   "division": "Central Division",
-  "last_updated": "2026-10-10T16:08:32.161469+00:00",
+  "last_updated": "2026-10-10T21:12:33.901577+00:00",
   "teams": [
     {
       "rank": 1,
@@ -127,7 +127,7 @@
       "rank": 7,
       "team_id": 525875,
       "name": "Fox Cities Forge",
-      "abbr": "FOX",
+      "abbr": "FCS",
       "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/8c9f6ea7-077a-4b4a-0c74-2a75b9db8400/256",
       "GP": 5,
       "W": 0,
