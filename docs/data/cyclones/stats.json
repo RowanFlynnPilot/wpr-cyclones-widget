@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-10-10T10:00:32.151845+00:00",
+  "last_updated": "2026-10-10T16:08:32.623609+00:00",
   "skaters": [
     {
       "name": "Gabe Field",
@@ -55,6 +55,19 @@
       "PTSPG": 0.8
     },
     {
+      "name": "Lucas Mankoff",
+      "jersey": "8",
+      "pos": "F",
+      "GP": 10,
+      "G": 1,
+      "A": 7,
+      "PTS": 8,
+      "PIM": 2,
+      "PPG": 1,
+      "GWG": 0,
+      "PTSPG": 0.8
+    },
+    {
       "name": "Bryton Thaxton",
       "jersey": "15",
       "pos": "F",
@@ -79,19 +92,6 @@
       "PPG": 1,
       "GWG": 2,
       "PTSPG": 0.88
-    },
-    {
-      "name": "Lucas Mankoff",
-      "jersey": "8",
-      "pos": "F",
-      "GP": 10,
-      "G": 1,
-      "A": 6,
-      "PTS": 7,
-      "PIM": 2,
-      "PPG": 1,
-      "GWG": 0,
-      "PTSPG": 0.7
     },
     {
       "name": "Jacob Maxon",
