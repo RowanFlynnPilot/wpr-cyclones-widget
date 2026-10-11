@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-10-11T01:04:35.093957+00:00",
+  "last_updated": "2026-10-11T02:38:03.528513+00:00",
   "total_games": 44,
   "games": [
     {
@@ -54,7 +54,7 @@
         "shots": 30,
         "pp_goals": 1,
         "pp_opportunities": 4,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525851,
@@ -113,7 +113,7 @@
         "shots": 37,
         "pp_goals": 5,
         "pp_opportunities": 9,
-        "record": "4-5-0-0"
+        "record": "5-5-0-0"
       }
     },
     {
@@ -168,7 +168,7 @@
         "shots": 32,
         "pp_goals": 2,
         "pp_opportunities": 5,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525851,
@@ -208,7 +208,7 @@
         "shots": 46,
         "pp_goals": 2,
         "pp_opportunities": 5,
-        "record": "4-5-0-0"
+        "record": "5-5-0-0"
       }
     },
     {
@@ -257,7 +257,7 @@
         "shots": 39,
         "pp_goals": 0,
         "pp_opportunities": 0,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525854,
@@ -296,7 +296,7 @@
         "shots": 31,
         "pp_goals": 1,
         "pp_opportunities": 4,
-        "record": "3-3-3-0"
+        "record": "3-4-3-0"
       }
     },
     {
@@ -356,7 +356,7 @@
         "shots": 37,
         "pp_goals": 0,
         "pp_opportunities": 1,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525854,
@@ -391,7 +391,7 @@
         "shots": 25,
         "pp_goals": 0,
         "pp_opportunities": 1,
-        "record": "3-3-3-0"
+        "record": "3-4-3-0"
       }
     },
     {
@@ -445,7 +445,7 @@
         "shots": 23,
         "pp_goals": 2,
         "pp_opportunities": 5,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525852,
@@ -499,7 +499,7 @@
         "shots": 45,
         "pp_goals": 1,
         "pp_opportunities": 2,
-        "record": "5-0-1-1"
+        "record": "6-0-1-1"
       }
     },
     {
@@ -543,7 +543,7 @@
         "shots": 28,
         "pp_goals": 0,
         "pp_opportunities": 3,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525852,
@@ -582,7 +582,7 @@
         "shots": 31,
         "pp_goals": 0,
         "pp_opportunities": 5,
-        "record": "5-0-1-1"
+        "record": "6-0-1-1"
       }
     },
     {
@@ -641,7 +641,7 @@
         "shots": 40,
         "pp_goals": 2,
         "pp_opportunities": 6,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525875,
@@ -739,7 +739,7 @@
         "shots": 49,
         "pp_goals": 3,
         "pp_opportunities": 3,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525875,
@@ -852,7 +852,7 @@
         "shots": 32,
         "pp_goals": 0,
         "pp_opportunities": 3,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525860,
@@ -935,7 +935,7 @@
         "shots": 42,
         "pp_goals": 2,
         "pp_opportunities": 3,
-        "record": "5-4-1-0"
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525851,
@@ -964,7 +964,7 @@
         "shots": 28,
         "pp_goals": 0,
         "pp_opportunities": 1,
-        "record": "4-5-0-0"
+        "record": "5-5-0-0"
       }
     },
     {
@@ -978,12 +978,12 @@
       "opponent_abbr": "PEO",
       "opponent_logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/37c34006-9695-41f7-67e9-47b2dfa6f000/256",
       "location": "Owens Center",
-      "status": "in_progress",
-      "status_code": 1,
+      "status": "final",
+      "status_code": 2,
       "game_type": "regular_season",
       "broadcast": "NATV",
-      "our_score": 0,
-      "opponent_score": 0,
+      "our_score": 1,
+      "opponent_score": 5,
       "overtime": false,
       "attendance": 0,
       "us": {
@@ -991,36 +991,68 @@
         "name": "Wausau Cyclones",
         "abbr": "WAU",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
-        "goals": 0,
-        "result": "",
+        "goals": 1,
+        "result": "L",
         "periods": {
-          "1": 0,
+          "1": 1,
           "2": 0,
           "3": 0
         },
-        "scorers": [],
-        "shots": 0,
+        "scorers": [
+          {
+            "name": "Joel Anderson",
+            "period": "1",
+            "clock": "05:39"
+          }
+        ],
+        "shots": 27,
         "pp_goals": 0,
-        "pp_opportunities": 0,
-        "record": "5-4-1-0"
+        "pp_opportunities": 1,
+        "record": "5-5-1-0"
       },
       "them": {
         "id": 525851,
         "name": "Peoria Mustangs",
         "abbr": "PEO",
         "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/37c34006-9695-41f7-67e9-47b2dfa6f000/256",
-        "goals": 0,
-        "result": "",
+        "goals": 5,
+        "result": "W",
         "periods": {
           "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 2,
+          "3": 3
         },
-        "scorers": [],
-        "shots": 0,
-        "pp_goals": 0,
-        "pp_opportunities": 0,
-        "record": "4-5-0-0"
+        "scorers": [
+          {
+            "name": "Arnet Clemen",
+            "period": "2",
+            "clock": "16:45"
+          },
+          {
+            "name": "Breyon Maroney",
+            "period": "2",
+            "clock": "13:01"
+          },
+          {
+            "name": "Zach Staelgraeve",
+            "period": "3",
+            "clock": "10:22"
+          },
+          {
+            "name": "Carter Charron",
+            "period": "3",
+            "clock": "04:20"
+          },
+          {
+            "name": "Carter Charron",
+            "period": "3",
+            "clock": "02:15"
+          }
+        ],
+        "shots": 41,
+        "pp_goals": 1,
+        "pp_opportunities": 4,
+        "record": "5-5-0-0"
       }
     },
     {
