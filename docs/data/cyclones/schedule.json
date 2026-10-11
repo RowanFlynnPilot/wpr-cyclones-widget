@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-10-11T16:35:16.609932+00:00",
+  "last_updated": "2026-10-11T21:31:52.071426+00:00",
   "total_games": 44,
   "games": [
     {
@@ -1050,7 +1050,7 @@
           }
         ],
         "shots": 41,
-        "pp_goals": 1,
+        "pp_goals": 0,
         "pp_opportunities": 4,
         "record": "5-5-0-0"
       }
