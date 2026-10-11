@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-10-11T09:24:56.055610+00:00",
+  "last_updated": "2026-10-11T16:35:16.609932+00:00",
   "total_games": 44,
   "games": [
     {
@@ -985,7 +985,7 @@
       "our_score": 1,
       "opponent_score": 5,
       "overtime": false,
-      "attendance": 0,
+      "attendance": 210,
       "us": {
         "id": 525857,
         "name": "Wausau Cyclones",
@@ -1007,7 +1007,7 @@
         ],
         "shots": 27,
         "pp_goals": 0,
-        "pp_opportunities": 1,
+        "pp_opportunities": 2,
         "record": "5-5-1-0"
       },
       "them": {
