@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-10-16T21:47:35.923485+00:00",
+  "last_updated": "2026-10-16T23:59:42.229899+00:00",
   "total_games": 44,
   "games": [
     {
@@ -1066,10 +1066,50 @@
       "opponent_abbr": "FCS",
       "opponent_logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/8c9f6ea7-077a-4b4a-0c74-2a75b9db8400/256",
       "location": "Marathon Park",
-      "status": "scheduled",
-      "status_code": 0,
+      "status": "in_progress",
+      "status_code": 1,
       "game_type": "regular_season",
-      "broadcast": "NATV"
+      "broadcast": "NATV",
+      "our_score": 0,
+      "opponent_score": 0,
+      "overtime": false,
+      "attendance": 0,
+      "us": {
+        "id": 525857,
+        "name": "Wausau Cyclones",
+        "abbr": "WAU",
+        "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
+        "goals": 0,
+        "result": "",
+        "periods": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "scorers": [],
+        "shots": 0,
+        "pp_goals": 0,
+        "pp_opportunities": 0,
+        "record": "5-5-1-0"
+      },
+      "them": {
+        "id": 525875,
+        "name": "Fox Cities Forge",
+        "abbr": "FCS",
+        "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/8c9f6ea7-077a-4b4a-0c74-2a75b9db8400/256",
+        "goals": 0,
+        "result": "",
+        "periods": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "scorers": [],
+        "shots": 0,
+        "pp_goals": 0,
+        "pp_opportunities": 0,
+        "record": "0-6-0-0"
+      }
     },
     {
       "id": 2917590,
