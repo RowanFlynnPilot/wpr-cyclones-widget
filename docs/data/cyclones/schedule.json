@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-10-17T14:06:24.441040+00:00",
+  "last_updated": "2026-10-17T20:11:03.398543+00:00",
   "total_games": 44,
   "games": [
     {
@@ -1098,7 +1098,7 @@
             "clock": "03:10"
           }
         ],
-        "shots": 18,
+        "shots": 41,
         "pp_goals": 1,
         "pp_opportunities": 4,
         "record": "5-6-1-0"
@@ -1132,12 +1132,12 @@
             "clock": "17:33"
           },
           {
-            "name": "Jarek Solak",
+            "name": "Harrison Howell",
             "period": "3",
             "clock": "14:05"
           }
         ],
-        "shots": 11,
+        "shots": 16,
         "pp_goals": 3,
         "pp_opportunities": 5,
         "record": "1-6-0-0"
