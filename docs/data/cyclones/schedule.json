@@ -1,6 +1,6 @@
 {
   "season": "2026-27 NA3HL",
-  "last_updated": "2026-10-19T07:57:06.548679+00:00",
+  "last_updated": "2026-10-19T17:22:25.856991+00:00",
   "total_games": 44,
   "games": [
     {
@@ -1262,7 +1262,7 @@
       "number": "220",
       "date": "2026-10-24",
       "day": "Sat",
-      "time": "7:00 PM",
+      "time": "3:00 PM",
       "home": false,
       "opponent": "Fox Cities Forge",
       "opponent_abbr": "FCS",

@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-10-19T07:57:07.410188+00:00",
+  "last_updated": "2026-10-19T17:22:26.693804+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -8,12 +8,12 @@
       "pos": "F",
       "GP": 13,
       "G": 5,
-      "A": 11,
-      "PTS": 16,
+      "A": 10,
+      "PTS": 15,
       "PIM": 6,
       "PPG": 1,
       "GWG": 0,
-      "PTSPG": 1.23
+      "PTSPG": 1.15
     },
     {
       "name": "Gabe Field",
@@ -60,12 +60,12 @@
       "pos": "F",
       "GP": 11,
       "G": 2,
-      "A": 7,
-      "PTS": 9,
+      "A": 8,
+      "PTS": 10,
       "PIM": 14,
       "PPG": 1,
       "GWG": 2,
-      "PTSPG": 0.82
+      "PTSPG": 0.91
     },
     {
       "name": "Nate Spencer",
@@ -146,6 +146,19 @@
       "PTSPG": 0.46
     },
     {
+      "name": "Owen Renslow",
+      "jersey": "16",
+      "pos": "F",
+      "GP": 11,
+      "G": 2,
+      "A": 4,
+      "PTS": 6,
+      "PIM": 6,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.55
+    },
+    {
       "name": "Jackson Schroeder",
       "jersey": "13",
       "pos": "F",
@@ -157,19 +170,6 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 1.2
-    },
-    {
-      "name": "Owen Renslow",
-      "jersey": "16",
-      "pos": "F",
-      "GP": 11,
-      "G": 2,
-      "A": 3,
-      "PTS": 5,
-      "PIM": 6,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.45
     },
     {
       "name": "Kaleb Fornetti",
