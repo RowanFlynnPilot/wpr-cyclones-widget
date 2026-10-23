@@ -1,7 +1,7 @@
 {
   "season_name": "2026-27 NA3HL",
   "division": "Central Division",
-  "last_updated": "2026-10-23T15:40:04.266195+00:00",
+  "last_updated": "2026-10-23T21:02:17.543919+00:00",
   "teams": [
     {
       "rank": 1,
@@ -9,18 +9,18 @@
       "name": "West Bend Power",
       "abbr": "WBD",
       "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/6de177ec-1093-4715-383a-cc9dea3b8800/256",
-      "GP": 8,
-      "W": 7,
+      "GP": 9,
+      "W": 8,
       "L": 0,
       "OTL": 0,
       "SOL": 1,
-      "PTS": 15,
-      "GF": 45,
-      "GA": 18,
-      "STK": "Won 7",
-      "P10": "7-0-0-1",
-      "record": "7-0-0-1",
-      "home_record": "2-0-0-0",
+      "PTS": 17,
+      "GF": 50,
+      "GA": 19,
+      "STK": "Won 8",
+      "P10": "8-0-0-1",
+      "record": "8-0-0-1",
+      "home_record": "3-0-0-0",
       "away_record": "5-0-0-1"
     },
     {
@@ -129,19 +129,19 @@
       "name": "Fox Cities Forge",
       "abbr": "FCS",
       "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/8c9f6ea7-077a-4b4a-0c74-2a75b9db8400/256",
-      "GP": 8,
+      "GP": 9,
       "W": 1,
-      "L": 7,
+      "L": 8,
       "OTL": 0,
       "SOL": 0,
       "PTS": 2,
-      "GF": 14,
-      "GA": 47,
-      "STK": "Lost 1",
-      "P10": "1-7-0-0",
-      "record": "1-7-0-0",
+      "GF": 15,
+      "GA": 52,
+      "STK": "Lost 2",
+      "P10": "1-8-0-0",
+      "record": "1-8-0-0",
       "home_record": "0-3-0-0",
-      "away_record": "1-4-0-0"
+      "away_record": "1-5-0-0"
     }
   ]
 }
