@@ -1,7 +1,7 @@
 {
   "season_name": "2026-27 NA3HL",
   "division": "Central Division",
-  "last_updated": "2026-10-24T21:16:23.956246+00:00",
+  "last_updated": "2026-10-24T23:26:09.575733+00:00",
   "teams": [
     {
       "rank": 1,
@@ -25,6 +25,26 @@
     },
     {
       "rank": 2,
+      "team_id": 525857,
+      "name": "Wausau Cyclones",
+      "abbr": "WAU",
+      "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
+      "GP": 15,
+      "W": 8,
+      "L": 6,
+      "OTL": 1,
+      "SOL": 0,
+      "PTS": 17,
+      "GF": 60,
+      "GA": 52,
+      "STK": "Won 3",
+      "P10": "7-3-0-0",
+      "record": "8-6-1-0",
+      "home_record": "3-1-0-0",
+      "away_record": "5-5-1-0"
+    },
+    {
+      "rank": 3,
       "team_id": 525860,
       "name": "Wisconsin Woodsmen",
       "abbr": "WIS",
@@ -44,7 +64,7 @@
       "away_record": "3-2-1-0"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team_id": 525852,
       "name": "Rochester Grizzlies",
       "abbr": "ROC",
@@ -62,26 +82,6 @@
       "record": "6-2-1-2",
       "home_record": "4-0-1-1",
       "away_record": "2-2-0-1"
-    },
-    {
-      "rank": 4,
-      "team_id": 525857,
-      "name": "Wausau Cyclones",
-      "abbr": "WAU",
-      "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/f9d1a3da-b412-4865-7f58-a9077981a300/256",
-      "GP": 14,
-      "W": 7,
-      "L": 6,
-      "OTL": 1,
-      "SOL": 0,
-      "PTS": 15,
-      "GF": 54,
-      "GA": 51,
-      "STK": "Won 2",
-      "P10": "6-4-0-0",
-      "record": "7-6-1-0",
-      "home_record": "3-1-0-0",
-      "away_record": "4-5-1-0"
     },
     {
       "rank": 5,
@@ -129,18 +129,18 @@
       "name": "Fox Cities Forge",
       "abbr": "FCS",
       "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/8c9f6ea7-077a-4b4a-0c74-2a75b9db8400/256",
-      "GP": 9,
+      "GP": 10,
       "W": 1,
-      "L": 8,
+      "L": 9,
       "OTL": 0,
       "SOL": 0,
       "PTS": 2,
-      "GF": 15,
-      "GA": 52,
-      "STK": "Lost 2",
-      "P10": "1-8-0-0",
-      "record": "1-8-0-0",
-      "home_record": "0-3-0-0",
+      "GF": 16,
+      "GA": 58,
+      "STK": "Lost 3",
+      "P10": "1-9-0-0",
+      "record": "1-9-0-0",
+      "home_record": "0-4-0-0",
       "away_record": "1-5-0-0"
     }
   ]
