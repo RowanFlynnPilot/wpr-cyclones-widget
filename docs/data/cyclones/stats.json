@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-10-25T14:53:48.626064+00:00",
+  "last_updated": "2026-10-25T20:25:13.197709+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -68,19 +68,6 @@
       "PTSPG": 1
     },
     {
-      "name": "Brady Schutte",
-      "jersey": "10",
-      "pos": "F",
-      "GP": 15,
-      "G": 5,
-      "A": 5,
-      "PTS": 10,
-      "PIM": 22,
-      "PPG": 2,
-      "GWG": 2,
-      "PTSPG": 0.67
-    },
-    {
       "name": "Jackson Schroeder",
       "jersey": "13",
       "pos": "F",
@@ -92,6 +79,19 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 1.43
+    },
+    {
+      "name": "Brady Schutte",
+      "jersey": "10",
+      "pos": "F",
+      "GP": 15,
+      "G": 5,
+      "A": 4,
+      "PTS": 9,
+      "PIM": 22,
+      "PPG": 2,
+      "GWG": 2,
+      "PTSPG": 0.6
     },
     {
       "name": "Nate Spencer",
@@ -107,19 +107,6 @@
       "PTSPG": 0.6
     },
     {
-      "name": "Owen Renslow",
-      "jersey": "16",
-      "pos": "F",
-      "GP": 13,
-      "G": 2,
-      "A": 7,
-      "PTS": 9,
-      "PIM": 10,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.69
-    },
-    {
       "name": "Alec Mellon",
       "jersey": "14",
       "pos": "D",
@@ -131,6 +118,19 @@
       "PPG": 1,
       "GWG": 0,
       "PTSPG": 0.53
+    },
+    {
+      "name": "Owen Renslow",
+      "jersey": "16",
+      "pos": "F",
+      "GP": 13,
+      "G": 2,
+      "A": 6,
+      "PTS": 8,
+      "PIM": 10,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.62
     },
     {
       "name": "Lucas Mankoff",
@@ -190,12 +190,12 @@
       "pos": "F",
       "GP": 12,
       "G": 1,
-      "A": 5,
-      "PTS": 6,
+      "A": 4,
+      "PTS": 5,
       "PIM": 2,
       "PPG": 0,
       "GWG": 0,
-      "PTSPG": 0.5
+      "PTSPG": 0.42
     },
     {
       "name": "Kaleb Fornetti",
@@ -224,6 +224,19 @@
       "PTSPG": 0.29
     },
     {
+      "name": "Colin Sexton",
+      "jersey": "12",
+      "pos": "D",
+      "GP": 13,
+      "G": 0,
+      "A": 3,
+      "PTS": 3,
+      "PIM": 10,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.23
+    },
+    {
       "name": "Colton Knutsen",
       "jersey": "4",
       "pos": "D",
@@ -248,19 +261,6 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0.14
-    },
-    {
-      "name": "Colin Sexton",
-      "jersey": "12",
-      "pos": "D",
-      "GP": 12,
-      "G": 0,
-      "A": 1,
-      "PTS": 1,
-      "PIM": 10,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.08
     },
     {
       "name": "Zach Pagel",
