@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-11-01T21:43:50.979070+00:00",
+  "last_updated": "2026-11-01T22:29:28.193693+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -8,12 +8,12 @@
       "pos": "F",
       "GP": 16,
       "G": 6,
-      "A": 13,
-      "PTS": 19,
+      "A": 12,
+      "PTS": 18,
       "PIM": 6,
       "PPG": 2,
       "GWG": 0,
-      "PTSPG": 1.19
+      "PTSPG": 1.13
     },
     {
       "name": "Brayden Myers",
@@ -55,6 +55,19 @@
       "PTSPG": 1.75
     },
     {
+      "name": "Maksim Salienko",
+      "jersey": "28",
+      "pos": "F",
+      "GP": 14,
+      "G": 4,
+      "A": 10,
+      "PTS": 14,
+      "PIM": 14,
+      "PPG": 2,
+      "GWG": 3,
+      "PTSPG": 1
+    },
+    {
       "name": "Gabe Field",
       "jersey": "6",
       "pos": "D",
@@ -65,19 +78,6 @@
       "PIM": 21,
       "PPG": 2,
       "GWG": 1,
-      "PTSPG": 0.93
-    },
-    {
-      "name": "Maksim Salienko",
-      "jersey": "28",
-      "pos": "F",
-      "GP": 14,
-      "G": 4,
-      "A": 9,
-      "PTS": 13,
-      "PIM": 14,
-      "PPG": 2,
-      "GWG": 3,
       "PTSPG": 0.93
     },
     {
