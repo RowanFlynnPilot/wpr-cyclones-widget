@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-11-05T23:52:09.060721+00:00",
+  "last_updated": "2026-11-06T03:58:07.996201+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -248,32 +248,6 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0.2
-    },
-    {
-      "name": "Antonio Giacalone",
-      "jersey": "26",
-      "pos": "F",
-      "GP": 7,
-      "G": 0,
-      "A": 1,
-      "PTS": 1,
-      "PIM": 0,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.14
-    },
-    {
-      "name": "Zach Pagel",
-      "jersey": "17",
-      "pos": "F",
-      "GP": 12,
-      "G": 0,
-      "A": 0,
-      "PTS": 0,
-      "PIM": 0,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0
     },
     {
       "name": "Aydan Welch",
