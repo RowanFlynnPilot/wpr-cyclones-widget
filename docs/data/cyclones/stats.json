@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-11-08T16:56:49.746491+00:00",
+  "last_updated": "2026-11-08T21:42:43.695058+00:00",
   "skaters": [
     {
       "name": "Jackson Maddock",
@@ -81,30 +81,17 @@
       "PTSPG": 0.82
     },
     {
-      "name": "Lucas Mankoff",
-      "jersey": "8",
-      "pos": "F",
-      "GP": 15,
-      "G": 3,
-      "A": 8,
-      "PTS": 11,
-      "PIM": 2,
-      "PPG": 1,
-      "GWG": 0,
-      "PTSPG": 0.73
-    },
-    {
       "name": "Brady Schutte",
       "jersey": "10",
       "pos": "F",
       "GP": 18,
       "G": 6,
-      "A": 4,
-      "PTS": 10,
+      "A": 5,
+      "PTS": 11,
       "PIM": 22,
       "PPG": 2,
       "GWG": 2,
-      "PTSPG": 0.56
+      "PTSPG": 0.61
     },
     {
       "name": "Nate Spencer",
@@ -120,6 +107,32 @@
       "PTSPG": 0.56
     },
     {
+      "name": "Lucas Mankoff",
+      "jersey": "8",
+      "pos": "F",
+      "GP": 15,
+      "G": 3,
+      "A": 7,
+      "PTS": 10,
+      "PIM": 2,
+      "PPG": 1,
+      "GWG": 0,
+      "PTSPG": 0.67
+    },
+    {
+      "name": "Owen Renslow",
+      "jersey": "16",
+      "pos": "F",
+      "GP": 16,
+      "G": 2,
+      "A": 8,
+      "PTS": 10,
+      "PIM": 12,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 0.63
+    },
+    {
       "name": "Alec Mellon",
       "jersey": "14",
       "pos": "D",
@@ -131,19 +144,6 @@
       "PPG": 1,
       "GWG": 0,
       "PTSPG": 0.5
-    },
-    {
-      "name": "Owen Renslow",
-      "jersey": "16",
-      "pos": "F",
-      "GP": 16,
-      "G": 2,
-      "A": 7,
-      "PTS": 9,
-      "PIM": 12,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.56
     },
     {
       "name": "Bryton Thaxton",
