@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-11-16T20:51:16.926680+00:00",
+  "last_updated": "2026-11-17T01:37:24.750832+00:00",
   "skaters": [
     {
       "name": "Brayden Myers",
@@ -229,12 +229,25 @@
       "pos": "D",
       "GP": 18,
       "G": 0,
-      "A": 4,
-      "PTS": 4,
+      "A": 3,
+      "PTS": 3,
       "PIM": 10,
       "PPG": 0,
       "GWG": 0,
-      "PTSPG": 0.22
+      "PTSPG": 0.17
+    },
+    {
+      "name": "Spencer Bullis",
+      "jersey": "25",
+      "pos": "D",
+      "GP": 2,
+      "G": 0,
+      "A": 2,
+      "PTS": 2,
+      "PIM": 2,
+      "PPG": 0,
+      "GWG": 0,
+      "PTSPG": 1
     },
     {
       "name": "Colton Knutsen",
@@ -248,19 +261,6 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0.15
-    },
-    {
-      "name": "Spencer Bullis",
-      "jersey": "25",
-      "pos": "D",
-      "GP": 2,
-      "G": 0,
-      "A": 1,
-      "PTS": 1,
-      "PIM": 2,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0.5
     },
     {
       "name": "Aydan Welch",
