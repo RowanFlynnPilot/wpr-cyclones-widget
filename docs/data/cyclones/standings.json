@@ -1,7 +1,7 @@
 {
   "season_name": "2026-27 NA3HL",
   "division": "Central Division",
-  "last_updated": "2026-11-21T23:36:46.727320+00:00",
+  "last_updated": "2026-11-22T03:51:10.799304+00:00",
   "teams": [
     {
       "rank": 1,
@@ -29,19 +29,19 @@
       "name": "Wisconsin Woodsmen",
       "abbr": "WIS",
       "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/112b08d7-9b8b-4a73-5640-cbef70d52500/256",
-      "GP": 19,
-      "W": 14,
+      "GP": 20,
+      "W": 15,
       "L": 4,
       "OTL": 1,
       "SOL": 0,
-      "PTS": 29,
-      "GF": 78,
+      "PTS": 31,
+      "GF": 82,
       "GA": 55,
-      "STK": "Won 6",
+      "STK": "Won 7",
       "P10": "9-1-0-0",
-      "record": "14-4-1-0",
+      "record": "15-4-1-0",
       "home_record": "10-2-0-0",
-      "away_record": "4-2-1-0"
+      "away_record": "5-2-1-0"
     },
     {
       "rank": 3,
@@ -129,18 +129,18 @@
       "name": "Fox Cities Forge",
       "abbr": "FCS",
       "logo": "https://imagedelivery.net/ErrQpIaCOWR-Tz51PhN1zA/8c9f6ea7-077a-4b4a-0c74-2a75b9db8400/256",
-      "GP": 17,
+      "GP": 18,
       "W": 2,
-      "L": 15,
+      "L": 16,
       "OTL": 0,
       "SOL": 0,
       "PTS": 4,
       "GF": 28,
-      "GA": 100,
-      "STK": "Lost 5",
+      "GA": 104,
+      "STK": "Lost 6",
       "P10": "1-9-0-0",
-      "record": "2-15-0-0",
-      "home_record": "1-6-0-0",
+      "record": "2-16-0-0",
+      "home_record": "1-7-0-0",
       "away_record": "1-9-0-0"
     }
   ]
