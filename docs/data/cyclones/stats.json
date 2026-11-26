@@ -1,6 +1,6 @@
 {
   "season_name": "2026-27 NA3HL",
-  "last_updated": "2026-11-26T05:46:28.394857+00:00",
+  "last_updated": "2026-11-26T20:01:23.729342+00:00",
   "skaters": [
     {
       "name": "Brayden Myers",
@@ -261,19 +261,6 @@
       "PPG": 0,
       "GWG": 0,
       "PTSPG": 0.15
-    },
-    {
-      "name": "Aydan Welch",
-      "jersey": "21",
-      "pos": "D",
-      "GP": 3,
-      "G": 0,
-      "A": 0,
-      "PTS": 0,
-      "PIM": 35,
-      "PPG": 0,
-      "GWG": 0,
-      "PTSPG": 0
     }
   ],
   "goalies": [
